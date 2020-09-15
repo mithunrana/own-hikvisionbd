@@ -1,0 +1,199 @@
+@media all and (min-width: 1200px) {
+    .container {
+        width: 90%;
+        max-width: 1280px;
+        margin: 0 auto;
+    }
+}
+
+@media all and (max-width: 1450px) {
+
+    .showcase .carousel-item {
+        height: 68vh;
+    }
+
+    .search-item {
+        left: 67%;
+        width: 30% !important;
+    }
+
+    .mega-corporate {
+        left: 79%;
+        width: 16% !important;
+
+    }
+
+    .mega-trainings {
+        width: 16% !important;
+    }
+
+    .mega-partners {
+        width: 16% !important;
+        left: 71%;
+    }
+
+    .mega-content {
+        width: 52%;
+    }
+
+    .mega-corporate {
+        left: 74%;
+
+    }
+
+}
+
+
+@media all and (max-width: 1200px) {
+    .container {
+        max-width: 1170px;
+    }
+
+    .icon-div ul {
+        display: block;
+    }
+
+    .search-item {
+        left: 0%;
+        width: 100% !important;
+    }
+
+    .main-nav {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .country-btn {
+        display: none !important;
+    }
+
+    .logo {
+        width: 180px;
+    }
+        .showcase .carousel-item {
+        height: 56vh;
+    }
+}
+
+@media all and (max-width: 1080px) {
+
+    .showcase .carousel-item {
+        height: 51vh;
+    }
+
+    .news-events-box {
+        height: 150px;
+    }
+
+    .tn-img {
+        display: none;
+    }
+
+}
+
+
+@media all and (max-width: 992px) {
+    .product-category {
+        height: 0;
+        opacity: 0;
+
+    }
+    .showcase .carousel-item {
+        height: 47vh;
+    }
+
+    .cat-btn {
+        display: block;
+    }
+
+    .no-padding {
+        padding-right: 15px;
+    }
+}
+
+@media all and (max-width: 768px) {
+    .login-main-form {
+        background: url(img/loginbg.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+
+    }
+
+    .login-img {
+        display: none;
+    }
+
+    .log {
+        padding-left: 15px !important;
+        background: rgba(255, 255, 255, 0.80);
+    }
+
+    .short-width {
+        width: 100% !important;
+    }
+
+    .mission-vission {
+        background-image: none;
+    }
+
+    .career-bg {
+        background-image: none;
+    }
+
+    .footer-map img {
+        width: 100%;
+    }
+
+    .designer {
+        margin-top: 5px;
+    }
+
+    .showcase .carousel-item {
+        height: 36vh;
+    }
+
+    .our-certification-area {
+        margin-bottom: 20px;
+    }
+
+    .fm {
+        width: 33%;
+        margin-bottom: 15px;
+    }
+
+    .footer-map {
+        margin-bottom: 15px;
+    }
+
+    .fix-social {
+        display: none;
+    }
+
+
+}
+
+@media all and (max-width: 576px) {
+
+    .dp-img img {
+        width: 100%;
+    }
+    .showcase .carousel-item {
+        height: 27vh;
+    }
+
+}
+
+
+@media all and (max-width: 400px) {
+    .showcase .carousel-item {
+        height: 17vh;
+    }
+
+    .fm {
+        width: 50% !important;
+        text-align: center;
+    }
+}

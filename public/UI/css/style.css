@@ -1,0 +1,1283 @@
+body {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+}
+
+.card {
+    border-radius: 0;
+}
+
+
+:focus {
+    outline: 0 !important;
+}
+
+.text-custom {
+    color: #d30411 !important;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+/********************** **************************
+				header styles
+*********************** *************************/
+header {
+    position: sticky;
+    width: 100%;
+    background: #fff;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+
+}
+
+/*header top styles*/
+
+.header-top {
+    background: #6d6e71;
+}
+
+.ht-contact {
+    float: right;
+}
+
+.ht-ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.ht-ul li {
+    display: inline-block;
+    border-left: 1px solid #fff;
+    padding: 0 8px;
+}
+
+.ht-ul li:first-child {
+    border-left: 0;
+}
+
+.ht-ul li:last-child {
+    padding-right: 0;
+}
+
+.ht-ul li a {
+    color: #fff;
+    padding: 2px 0;
+    display: block;
+    font-size: 14px;
+}
+
+/* Country*/
+.country-content {
+    right: 1.5%;
+    position: absolute;
+    width: 40%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    z-index: 9999;
+    background: #fff;
+    transition: all cubic-bezier(0.26, 0.1, 0.27, 1.5) 0.3s;
+    top: 130%;
+    visibility: hidden;
+    opacity: 0;
+    box-shadow: 0px 0px 15px rgba(128, 128, 128, 0.30);
+}
+
+.country-item {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.country-item li {
+    display: block;
+    margin: 12px 0px;
+    padding: 0;
+}
+
+.country-item li a {
+    color: #6d6e71;
+    display: block;
+    transition: .3s;
+}
+
+.country-item li a img {
+    width: 30px;
+    margin-right: 3px;
+}
+
+.country-btn:hover .country-content {
+    visibility: visible;
+    opacity: 1;
+    top: 100%;
+}
+
+.country-item li a:hover {
+    color: #d71920;
+}
+
+/********************** **************************
+				nav styles
+*********************** *************************/
+nav {
+    border-bottom: 2px solid #ddd;
+}
+
+.logo {
+    margin-top: 10px;
+}
+
+.main-nav {
+    float: right;
+}
+
+.nav-ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nav-ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+
+
+.nav-ul li a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #6d6e71;
+    font-weight: 400;
+    padding: 20px 0;
+    display: block;
+    font-size: 14px;
+}
+
+
+
+.search-item {
+
+}
+
+
+
+.web-search {
+    background: #d71920;
+    padding: 7px;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.search-mega-content {
+    position: absolute;
+    width: 44%;
+    padding: 10px 7px;
+    display: block;
+    opacity: 0;
+    border: 1px solid #ddd;
+    display: none;
+    border-radius: 2px;
+    z-index: 9999;
+    background: #fff;
+    transition: all cubic-bezier(0.26, 0.1, 0.27, 1.5) 0.3s;
+    right: 10%;
+    box-shadow: 0px 0px 15px rgba(128, 128, 128, 0.30);
+}
+
+.search-box {
+    opacity: 1;
+    display: block;
+    top: 100%;
+}
+
+.search-item {
+    width: 25%;
+    padding: 20px 25px;
+}
+
+.mega-content {
+    position: absolute;
+    width: 270px;
+    padding: 10px 0;
+    visibility: hidden;
+    opacity: 0;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    z-index: 9999;
+    left: 50% !important;
+    margin-left: -100% !important;
+    background: #fff;
+    transition: all cubic-bezier(0.26, 0.1, 0.27, 1.5) 0.3s;
+    top: 115%;
+    box-shadow: 0px 0px 15px rgba(128, 128, 128, 0.30);
+}
+
+.mega-item {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.mega-item li {
+    display: block;
+    margin: 5px 5px;
+}
+
+.mega-item li a {
+    padding: 8px 8px;
+    color: #6d6e71;
+    display: block;
+    font-size: 14px;
+    transition: .3s;
+    text-transform: capitalize;
+}
+
+.mega-dd-btn:hover .mega-content {
+    visibility: visible;
+    opacity: 1;
+    top: 100%;
+}
+
+.mega-item li a:hover {
+    color: #e30613;
+}
+
+.mega-products {
+    position: absolute;
+    min-width: 400px;
+    left: 50%;
+    width: 100%;
+    margin-left: -200px !important;
+}
+
+.mega-press {
+    left: 30%;
+}
+
+.mega-Solutions {
+    left: 35%;
+}
+
+.mega-Support {
+    left: 40%;
+}
+
+.mega-trainings {
+    width: 15%;
+    left: 63%;
+}
+
+.mega-partners {
+    width: 15%;
+    left: 69%;
+}
+
+.mega-corporate {
+    position: absolute;
+    min-width: 200px;
+    left:0px;
+}
+
+
+
+/********************** **************************
+				mobile menu styles
+*********************** *************************/
+
+.menu-icon {
+    position: relative;
+    width: 50px;
+    height: 44px;
+    box-sizing: border-box;
+    padding: 4px 8px;
+    cursor: pointer;
+    float: right;
+    display: none;
+}
+
+.menu-icon span {
+    width: 100%;
+    height: 4px;
+    background: #d71920;
+    margin: 5px 0;
+    display: block;
+    transition: all cubic-bezier(0.26, 0.1, 0.27, 1.55) 0.30s;
+
+}
+
+.menu-icon.active span {
+    position: absolute;
+    width: calc(100% - 16px);
+    top: calc(50% - 8px);
+
+}
+
+.menu-icon.active span:nth-child(1) {
+    transform: rotate(45deg);
+}
+
+.menu-icon.active span:nth-child(2) {
+    opacity: 0;
+
+}
+
+.menu-icon.active span:nth-child(3) {
+    transform: rotate(-45deg);
+}
+
+.icon-div ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    float: left;
+    margin-top: 7px;
+    margin-right: 6px;
+    display: none;
+}
+
+/*mobile menu styles*/
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    left: -280px;
+    width: 280px;
+    height: 100vh;
+    background: #fff;
+    transition: .3s;
+    z-index: 9999;
+    border-right: 1px solid #ddd;
+}
+
+.mobile-menu.active {
+    left: 0;
+}
+
+.mm-logo {
+    border-bottom: 1px solid #ddd;
+}
+
+.mm-logo .logo {
+    width: 130px;
+    padding: 10px 15px;
+}
+
+.menu-link a {
+    display: block;
+    padding: 10px 15px;
+    color: #333;
+    border-bottom: 1px solid #ddd;
+    transition: .3s;
+}
+
+.menu-link a .fa {
+    float: right;
+    margin-top: 5px;
+
+}
+
+.menu-body ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-body ul li {
+    border-bottom: 1px solid #ddd;
+}
+
+.menu-body .card-body {
+    padding: 0;
+    background: #fafafa;
+}
+
+.menu-body ul li a {
+    padding: 10px 10px;
+    display: block;
+    color: #666;
+}
+
+
+/***************** *********************
+         slider area styles
+****************** ********************/
+
+
+.showcase .carousel-item {
+    height: 70vh;
+}
+
+.showcase .carousel-img-1 {
+
+    background-size: cover;
+    background-position: center center;
+}
+
+.showcase .carousel-img-2 {
+    background-size: cover;
+    background-position: center center;
+}
+
+.showcase .carousel-img-3 {
+    background-size: cover;
+    background-position: center center;
+
+}
+
+
+
+
+
+.showcase .carousel-indicators li {
+    height: 4px;
+    width: 30px;
+    border-radius: 5px;
+    color: #E30613;
+    background: #fff;
+    cursor: pointer;
+}
+
+.showcase .carousel-indicators .active {
+    background: #E30613;
+}
+
+.showcase .slider-control {
+    font-size: 50px;
+}
+
+.showcase .carousel-body {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+}
+
+.showcase .carousel-body h2 {
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 10px;
+}
+
+.showcase .carousel-body p {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.showcase .carousel-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-size: 100% 100%;
+    background-position: center;
+
+}
+
+
+/********************** **************************
+				product area styles
+*********************** *************************/
+.products-area {
+    background: #ededed;
+}
+
+.product-box {
+    box-shadow: 0px 0px 5px rgba(128, 128, 128, 0.24);
+    position: relative;
+    background: #fff;
+    border-radius: 0px;
+    overflow: hidden;
+    transition: .3s;
+    margin: 0px 6px;
+    border: 1px solid #ddd;
+}
+
+.product-box:hover {
+    box-shadow: 0px 0px 10px #bbb;
+}
+
+.product-info {
+    padding: 10px;
+}
+
+.p-compare {
+    border-top: 1px solid #ddd;
+    padding: 13px;
+}
+
+.p-compare label {
+    margin: 0;
+}
+
+.product-info-img {
+    height: 165px;
+    line-height: 165px;
+    margin: 0 auto;
+    width: 165px;
+}
+
+.product-info-img img {
+    display: inline-block;
+    max-width: 100%;
+    max-height: 100%;
+    vertical-align: middle;
+}
+
+.product-info h5 {
+    color: #d71920;
+}
+
+.product-info .product-name {
+    color: #d71920;
+    font-weight: 700;
+    font-size: 16px;
+    display: inline-block;
+    margin: 15px 0;
+
+}
+
+.product-info a {
+    color: black;
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 13px;
+    margin-bottom: 30px;
+    display: block;
+}
+
+.plus-arrow {
+
+    background: #777777;
+    padding: 6px;
+    position: absolute;
+    left: 0px;
+    top: 0;
+    z-index: 1;
+
+}
+
+.back-arrow {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.plus-arrow img {}
+
+.back-arrow img {
+    width: 64px;
+}
+
+
+.products-slider-custom .slick-dots li {
+
+    border: 2px solid #808080;
+    border-radius: 50%;
+    height: 13px;
+    width: 13px;
+}
+
+.products-slider-custom .slick-dots li.slick-active {
+    background: #e30613;
+    border-color: #e30613;
+}
+
+.products-slider-custom .slick-dots li button:before {
+    display: none;
+}
+
+.products-slider-custom .slick-dots {
+    bottom: -35px;
+}
+
+.p-compare label,
+input {
+    cursor: pointer;
+}
+
+.ps-control {
+    font-size: 25px;
+    color: #fff;
+    background: #e30613;
+    height: 26px;
+    width: 26px;
+    line-height: 26px;
+    text-align: center;
+    border-radius: 2px;
+    cursor: pointer;
+    margin: 0 3px;
+}
+
+/********************** **************************
+				discover product area styles
+*********************** *************************/
+.discover-product {
+    background: #ededed;
+}
+
+.dp-title h4 {
+    text-transform: uppercase;
+    font-size: 33px;
+    color: #333;
+    font-weight: 400;
+    margin: 0 20px;
+}
+
+.dp-items {
+    position: relative;
+    padding: 0px 10px;
+}
+
+.dp-arrow-back {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.dp-img {}
+
+.dp-name {
+    padding: 5px 10px;
+}
+
+.dp-name h4 {
+    color: #505050;
+    font-family: sans-serif;
+    font-size: 21px;
+    text-transform: capitalize;
+}
+
+
+/********************** **************************
+				main product area styles
+*********************** *************************/
+.main-product {
+    background: #ededed;
+
+}
+
+.product-category .fa {
+    float: right;
+    margin-top: 5px;
+}
+
+.cat-item a {
+    display: block;
+    border-top: 1px solid #ddd;
+    padding: 9px 12px;
+    font-size: 15px;
+    text-transform: capitalize;
+    font-weight: 500;
+    color: #444;
+
+}
+
+.padding-pro {
+    padding: 0 8px;
+}
+
+.no-margin {
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.pc-title h4 {
+    padding: 10px 15px;
+    ;
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #333;
+    margin: 0;
+}
+
+.product-category {
+    background: #fff;
+    border: 1px solid #ddd;
+    overflow: hidden;
+    transition: 1.5s;
+}
+
+.cat-show {
+    height: auto !important;
+    opacity: 1 !important;
+}
+
+
+.no-padding {
+    padding-right: 0;
+}
+
+.main-product-right .proname {
+    font-size: 17px;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+    text-transform: capitalize;
+    margin-bottom: 40px;
+}
+
+.main-cat {
+    background: red;
+    color: #fff !important;
+    padding: 8px 12px;
+    display: block;
+    display: none;
+}
+
+.main-product-right {
+    padding: 19px;
+}
+
+.cat-body ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.cat-body ul li a {
+    font-size: 14px;
+    color: #333;
+    transition: .3s;
+
+}
+
+.cat-body ul li a:hover {
+    color: #d71920;
+}
+
+.cat-body .card-body {
+    padding: 4px 15px;
+    border-top: 1px solid #ddd;
+}
+
+/********************** **************************
+				success history area styles
+*********************** *************************/
+/*.sh-header-img {
+    background: url(img/bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 50px 25px;
+}*/
+.success-history-header {
+    background: url(img/bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 50px 25px;
+}
+
+.sh-img a h4 {
+    position: relative;
+    padding: 5px;
+    padding-bottom: 10px;
+    font-size: 22px;
+    margin-top: 10px;
+    border-bottom: 1px solid #ddd;
+    font-weight: 400;
+}
+
+.sh-img a h4::after {
+
+    content: '';
+    display: block;
+    height: 5px;
+    width: 50px;
+    background: #d71920;
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+}
+
+.sh-box {
+    margin: 10px 0;
+}
+
+/********************** **************************
+				product-details area styles
+*********************** *************************/
+.product-specification .table td,
+.table th {
+    border: 0;
+}
+
+
+/********************** **************************
+				product modal area styles
+*********************** *************************/
+.modal-lg {
+    min-width: 75%;
+    top: 20%;
+}
+
+.modal-title h5 {
+    color: #d71920;
+}
+
+/********************** **************************
+				social button area styles
+*********************** *************************/
+
+.fix-social {
+    position: fixed;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+}
+
+.fix-social ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.fix-social ul li {
+    margin: 7px 0;
+}
+
+.fix-social ul li a {
+    height: 36px;
+    width: 36px;
+    line-height: 36px;
+    font-size: 19px;
+    color: #fff;
+    background: #d71920;
+    display: block;
+    text-align: center;
+    position: relative;
+
+}
+
+.fix-social ul li a span {
+    position: absolute;
+    top: 0;
+    right: -100px;
+    width: 120px;
+    height: 36px;
+    color: #fff;
+    background: #d71920;
+    font-size: 15px;
+    z-index: -1;
+    opacity: 0;
+    backface-visibility: hidden;
+    transition: all cubic-bezier(0.26, 0.1, 0.27, 1.3) 0.3s;
+    font-size: 12px;
+
+}
+
+.fix-social ul li a .fa {
+    font-size: 17px;
+}
+
+.fix-whatsapp {
+    background: #34af23 !important;
+}
+
+.fix-whatsapps .fa-whatsapp {
+    font-size: 18px !important;
+}
+
+.fix-whatsapps {
+    background: #34af23 !important;
+}
+
+.fix-social ul li:hover span {
+    opacity: 1;
+    backface-visibility: visible;
+    right: 40px;
+}
+
+/********************** **************************
+				Solutions  area styles
+*********************** *************************/
+.solution-area {
+    background: url(img/bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 40px 0;
+}
+
+.solution-item {
+    background: #fff;
+    padding: 13px;
+    margin: 0 7px;
+}
+
+.solution-item .media-body a {
+    display: inline-block;
+    margin-bottom: 8px;
+}
+
+.slsn-control {
+    background: #555;
+}
+
+/********************** **************************
+				training  area styles
+*********************** *************************/
+.our-certification-area {
+    width: 100%;
+    background: #EDEDED;
+    overflow: hidden;
+    height: 305px;
+}
+
+.tn-img {
+    float: left;
+    width: 40%;
+}
+
+.tn-desc {
+    float: left;
+    width: 100%;
+}
+
+.tn-desc h5 {
+    text-transform: capitalize;
+    font-size: 16px;
+    color: #505050;
+    font-weight: bold;
+}
+
+
+.tn-desc p {
+    font-size: 14px;
+    color: #787878;
+}
+
+.tn-desc ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.tn-desc ul li {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+.tn-desc ul li:last-child {
+    border: 0;
+    margin-bottom: 0px;
+}
+
+/********************** **************************
+				news events area styles
+*********************** *************************/
+.news-events {
+    background: #ededed;
+}
+
+.news-events-box {
+    height: 130px;
+    background: #fff;
+    padding: 20px;
+    margin: 5px 0;
+}
+
+.ne-date {
+    margin-bottom: 4px;
+    font-size: 13px;
+    color: #787878;
+}
+
+.ne-desc {
+    color: #46474e;
+    font-size: 14px;
+    margin-bottom: 7px;
+}
+
+.ne-readmore {
+    color: #d71920;
+    font-weight: bold;
+}
+
+.events-txt {
+    width: 70%;
+    float: left;
+}
+
+.events-img {
+    width: 29%;
+    float: left;
+    margin-left: 1%;
+}
+
+/********************** **************************
+				footer area styles
+*********************** *************************/
+footer {
+    background: #6D6E71;
+    color: #fff;
+    font-size: 13px;
+    padding: 50px 0;
+}
+
+.footer-item-title {
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 16px;
+}
+
+.follow-us .fa {
+    color: #fff;
+    border: 1.5px solid #fff;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 50%;
+    margin: 0 3px;
+    transition: all cubic-bezier(0.26, 0.1, 0.27, 1.3) 0.6s;
+}
+
+.follow-us .fa:hover {
+    border-radius: 0px;
+    transform: rotate(360deg);
+}
+
+.footer-middle {
+    width: 100%;
+    overflow: hidden;
+}
+
+.fm {
+    width: 20%;
+    float: left;
+}
+
+.footer-middle ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer-middle ul li {
+    margin-bottom: 10px;
+}
+
+.footer-middle ul li a {
+    color: #fff;
+}
+
+.download-apps .fa {
+    color: #fff;
+    font-size: 25px;
+    margin: 0 5px;
+}
+
+.copyright {
+    padding-top: 10px;
+    border-top: 1px solid #ddd;
+}
+
+.main-copy a {
+    color: #fff;
+}
+
+.designer p {
+    font-size: 15px;
+}
+
+.designer a {
+    color: #fff;
+}
+
+/********************** **************************
+				mega trading area styles
+*********************** *************************/
+.mega-trading-header {
+    background: #ededed;
+
+}
+
+.mega-trading {
+    background: #ededed;
+
+}
+
+.mt-txt h4 {
+    font-size: 20px;
+}
+
+/********************** **************************
+				distributor area styles
+*********************** *************************/
+.dl-txt h4 {
+    position: relative;
+    padding-bottom: 15px;
+    font-size: 20px;
+    padding: 18px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.dl-txt h4 a {
+    color: #777;
+    transition: .3s;
+}
+
+.dl-txt h4 a:hover {
+    color: #d71920;
+}
+
+.dl-txt h4::after {
+    content: '';
+    display: block;
+    height: 5px;
+    width: 50px;
+    background: #d71920;
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+}
+
+.text-gray {
+    color: #666 !important;
+}
+
+.dist-absolute {
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    left: 0;
+}
+
+.dist-hide {
+    background: #fdfdfd;
+}
+
+.dist-hide ul li {
+    padding: 7px 15px;
+    font-size: 14px;
+}
+
+
+
+/********************** **************************
+				importer area styles
+*********************** *************************/
+.importer-area .sh-img a h4 {
+    font-weight: 400;
+    font-size: 20px;
+}
+
+/********************** **************************
+				mission vission area styles
+*********************** *************************/
+.mission-vission {
+    background: url(img/about-left.png) scroll right center no-repeat #eee;
+    height: 415px;
+    background-size: 50%;
+}
+
+.career-bg {
+    background: url(img/career-left.jpg) scroll left center no-repeat #f2f2f2;
+    height: 350px;
+    background-size: 50%;
+}
+
+/********************** **************************
+				login form  area styles
+*********************** *************************/
+.login-width {
+    border: 1px solid #bababa;
+    max-width: 750px;
+    margin: 0 auto;
+    box-shadow: 0px 0px 10px #ddd;
+}
+
+.login-img {
+    background: url(img/loginbg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 426px;
+    background-position: -316px center;
+}
+
+.login-img img {
+    height: 426px;
+}
+
+/********************** **************************
+				product modal area styles
+*********************** *************************/
+
+.modal-lg {
+    min-width: 75%;
+    top: 15%;
+}
+
+.modal-title h5 {
+    color: #d71920;
+}
+
+.mpi-img {
+    border: 1px solid #d71920;
+}
+
+.mpi-img img {
+    height: 370px;
+    width: 370px;
+    padding: 20px;
+
+}
+
+.mpi-info {
+    padding: 10px;
+}
+
+/********************** **************************
+				main solution area styles
+*********************** *************************/
+.sh-solution {
+    border: 1px solid #6D6E71;
+    border-top: 4px solid #6D6E71;
+    border-radius: 5px 5px 0 0 !important;
+    background: #ffffff8a;
+}
+.sh-txt-solution{
+    padding: 0px 15px;
+    padding-bottom: 20px;
+}
+.sh-img a h5{
+    padding: 0 15px;
+    margin: 20px 0;
+    font-size: 21px;
+}
+.sh-img-solution img{
+    height: 215px;
+    width: 100%;
+}
+/********************** **************************
+				solution details area styles
+*********************** *************************/
+
+.sd-bg{
+    background: #EDEDED;
+    overflow: hidden;
+}
+
+
+
+
+
+
+
