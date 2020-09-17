@@ -2,8 +2,11 @@
     $SiteProfile = App\SiteProfile::first();
 @endphp
 
+
 @php
-$title = "Success History Hikvision Bangladesh | Mega Trading";
+    $title = "Success History Hikvision Bangladesh | Tech Help Info";
+     $keywords =  "success history, hikvision, bangladesh, cctv, camera, nvr, dvr, access control, price, bd, hikvision support bangladesh, hikvision support bangladesh, hikvision dvr price in bd,tech help info";
+     $description = "tech help info is the it solution company in bangladesh, provide all kinds of it solutions in bangladesh";
 @endphp
 
 @include('UI.inc.headersource')
@@ -33,7 +36,7 @@ $title = "Success History Hikvision Bangladesh | Mega Trading";
         <div class="row">
             <div class="col">
                 <div class="sh-header-img">
-                    <h3 class="mb-4" style="color: #555;">Hikvision is the world's largest supplier of video surveillance products and Solutions</h3>
+                    <h3 class="mb-4" style="color: #555;">Hikvision is the world's largest security system supplier of video surveillance products and Solutions</h3>
                     <p style="color: #555;">The company makes a speciality of video police investigation technology, also as coming up with and producing a full-line of innovative CCTV and video police investigation product. the merchandise line ranges from cameras and DVRs to video management computer code. Since its origination in 2001, Hikvision has quickly achieved a number one worldwide market position within the security business.</p>
                 </div>
             </div>

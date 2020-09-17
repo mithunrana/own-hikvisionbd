@@ -176,6 +176,7 @@ class ProductsController extends Controller
             $Products->SeoHeading = $request->SeoHeading;
             $Products->MegaPixelId = $request->MegaPixelId;
             $Products->BrandId = $request->BrandId;
+            $Products->ProductsType = $request->ProductsType;
             $Products->BrowserTitle = $request->BrowserTitle;
             $Products->SeoKeyword = $request->SeoKeyword;
             $Products->SeoDescription = $request->SeoDescription;
@@ -198,6 +199,7 @@ class ProductsController extends Controller
             $Products->SeoHeading = $request->SeoHeading;
             $Products->MegaPixelId = $request->MegaPixelId;
             $Products->BrandId = $request->BrandId;
+            $Products->ProductsType = $request->ProductsType;
             $Products->BrowserTitle = $request->BrowserTitle;
             $Products->SeoKeyword = $request->SeoKeyword;
             $Products->SeoDescription = $request->SeoDescription;
@@ -268,9 +270,9 @@ class ProductsController extends Controller
                 }
             }else{
                 if(File::exists($Products->Datasheet)){
-                   File::move($Products->Datasheet,'productsdatasheet'."/".$request->Model.'.pdf');
-                   $Products->Datasheet = 'productsdatasheet'."/".$request->Model;
-                   $Products->Model = request('Model');
+                    File::move($Products->Datasheet,'productsdatasheet'."/".$request->Model.'.pdf');
+                    $Products->Datasheet = 'productsdatasheet'."/".$request->Model;
+                    $Products->Model = request('Model');
                 }else{
                     $Products->Model = request('Model');
                     $Products->Datasheet = '#';
@@ -285,9 +287,10 @@ class ProductsController extends Controller
         $Products->Specification = request('Specification');
         $Products->Permalink = request('Permalink');
         $Products->Category = request('Category');
-        $Products->SeoHeading = $request->SeoHeading;
-        $Products->MegaPixelId = $request->MegaPixelId;
+        $Products->SeoHeading = request('SeoHeading');
+        $Products->MegaPixelId = request('MegaPixelId');
         $Products->BrandId = request('BrandId');
+        $Products->ProductsType = request('ProductsType');
         $Products->BrowserTitle = request('BrowserTitle');
         $Products->SeoKeyword = request('SeoKeyword');
         $Products->SeoDescription = request('SeoDescription');

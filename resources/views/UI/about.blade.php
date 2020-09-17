@@ -3,9 +3,9 @@
 @endphp
 
 @php
-    $title = "Hikvision Bangladesh | CCTV Camera NVR DVR Price In BD";
-    $keywords =  "hikvision, bangladesh, cctv, camera, nvr, dvr, access control, price, bd, hikvision support bangladesh, hikvision support bangladesh, hikvision dvr price in bd";
-    $description = "Hikvision Bangladesh | CCTV Camera NVR DVR Price In BD, Hikvision Price In Bangladesh Contact: 01836375309";
+    $title = "About | Tech Help Info";
+    $keywords =  "hikvision, bangladesh, cctv, camera, nvr, dvr, access control, price, bd, hikvision support bangladesh, hikvision support bangladesh, hikvision dvr price in bd,tech help info";
+    $description = "tech help info is the it solution company in bangladesh, provide all kinds of it solutions in bangladesh";
 @endphp
 
 @include('UI.inc.headersource')
@@ -28,7 +28,7 @@
             <div class="col wow fadeInDown" data-wow-duration="1s">
                 <ol class="breadcrumb mb-0 mt-2">
                     <li class="breadcrumb-item"><a href="{{asset('')}}">Home</a></li>
-                    <li class="breadcrumb-item active">About Mega Trading</li>
+                    <li class="breadcrumb-item active">About Tech Help Info</li>
                 </ol>
             </div>
         </div>
@@ -46,8 +46,8 @@
                     <div class="row">
                         <div class="col">
                             <div class="mt-header">
-                                <h3 class="text-custom">Mega Trading</h3>
-                                <p>Mega Trading is the best CCTV camera, Security system supplier in bangladesh. We sell innovative video surveillance Products CCTV Camera, NVR, DVR, Network camera, Analog Camera.we are committed with all time support service..</p>
+                                <h3 class="text-custom">Tech Help Info</h3>
+                                <p>Tech Help Info is the best it solutions company in bangladesh provide all kinds of IT Solutions & Product, Security system supplier in bangladesh. We sell innovative video surveillance Products CCTV Camera, NVR, DVR, Network camera, Analog Camera.we are committed with all time support service..</p>
                             </div>
                         </div>
                     </div>
@@ -71,7 +71,7 @@
                             <div class="col-md-7">
                                 <div class="mt-txt pr-2">
                                     <h4>Quality product:</h4>
-                                    <p style="font-size: 14px;">We use our 7 years of in depth technical experience and knowledge to pick and style the most effective value quality product for our customer. All our product bear internal control before commerce to customer</p>
+                                    <p style="font-size: 14px;">We use our 3 years of in depth technical experience and knowledge to pick and style the most effective value quality product for our customer. All our product bear internal control before commerce to customer</p>
                                 </div>
                             </div>
                             <div class="col-md-5">
@@ -85,8 +85,8 @@
                         <div class="row">
                             <div class="col-md-7">
                                 <div class="mt-txt pr-2">
-                                    <h4>Mission Mega Trading</h4>
-                                    <p style="font-size: 14px;">Delegate Unicode Technology Members with skills, territory, facilities, social identification & implement Corporate Governance, Clarity & Enterprise Architecture. So that our deep business of data permits United States to provide purchasers with advanced thoughts that assist them improve productivity and win business goal</p>
+                                    <h4><a style="color:darkred" href="https://www.techhelpinfo.com/about">Mission Tech Help Info</a></h4>
+                                    <p style="font-size: 14px;">Our main concern are security & Eliminate unemployment. cause Tech Help Info want unemployment Get away from our country. by security service we protect our country and prevent crime.</p>
                                 </div>
                             </div>
                             <div class="col-md-5">
@@ -100,8 +100,8 @@
                         <div class="row">
                             <div class="col-md-7">
                                 <div class="mt-txt pr-2">
-                                    <h4>Vission Mega Trading:</h4>
-                                    <p style="font-size: 14px;">To become most well-liked System measuring instrument through Caliber in IT Solutions & IT Enabled Services likewise to be International, leverage Prospective of native Resource in info & Communication Technology.</p>
+                                    <h4><a style="color:darkred" href="https://www.techhelpinfo.com/about"> Vission  Tech Help Info></a></h4>
+                                    <p style="font-size: 14px;">We are committed to explore creative ways to better perceive and understand our world. and we make the world secure and user friendly can user use the technolgy very easily</p>
                                 </div>
                             </div>
                             <div class="col-md-5">

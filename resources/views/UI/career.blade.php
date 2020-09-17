@@ -3,7 +3,9 @@
 @endphp
 
 @php
-    $title = "Career Hikvision | Mega Trading International LTD";
+    $title = "Career Hikvision Bangladesh| Tech Help Info";
+     $keywords =  "hikvision, bangladesh, cctv, camera, nvr, dvr, access control, price, bd, hikvision support bangladesh, hikvision support bangladesh, hikvision dvr price in bd,tech help info, career hikvision, bangladesh";
+     $description = "Career Hikvision In Bangladesh, CCTV Surveillance hikvision cctv camera, For hikvision product price in bangladesh contact: 01836375309";
 @endphp
 
 @include('UI.inc.headersource')

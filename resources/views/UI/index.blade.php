@@ -66,11 +66,11 @@ $SiteProfile = App\SiteProfile::first();
 <section class="products-area clearfix py-5 wow fadeInDown" data-wow-duration="1s">
 
     <div class="section-heading text-center">
-        <h1 style="font-size: 31px;" class="heading-title">SOSHINE MARKETING COMPANY | AVTECH BANGLADESH</h1>
+        <h1 style="font-size: 31px;" class="heading-title">Hikvision Bangladesh | CCTV Camera Price In Bangldesh</h1>
         <p class="heading-text">
-            <b>We Provide all kinds of avtech products in bangladesh<br>
-                <b>AVECH NVR, DVR, HD CCTV CAMERA, IP CCTV CAMERA, ANALOG CAMERA, AND OTHER PRODUCTS</b>
-            </b>
+            <p>We Provide all kinds of hikvision CCTV Camera Products in bangladesh<br>
+                <strong>Hikvision NVR, DVR, HD CCTV CAMERA, IP CCTV CAMERA, ANALOG CAMERA, Access Control etc.</strong>
+            </p>
         </p>
     </div>
 
