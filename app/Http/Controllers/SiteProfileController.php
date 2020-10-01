@@ -8,7 +8,7 @@ class SiteProfileController extends Controller
 {
     public function index(){
         $SiteProfile = SiteProfile::first();
-        return view('Admin.SiteProfile',compact('SiteProfile'));
+        return view('Admin.siteprofile',compact('SiteProfile'));
     }
 
 
