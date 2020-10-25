@@ -7,11 +7,6 @@
                     <div class="ht-contact">
                         <ul class="ht-ul">
                             <li><a href="javascript:;">Cell: {{$SiteProfile->CorporatePhone}}</a></li>
-                            <li class="country-btn">
-                                <a href="javascript:;">
-                                    <img width="30" src="{{asset('')}}UI/images/bangladesh.jpg"> Bangladesh <i class="fa fa-caret-down"></i>
-                                </a>
-                            </li>
                             @if(!Auth::check())
                                 <li><a style="color: #fff;display: inline-block;" href="{{asset('')}}register">Signup</a></li>
                                 <li><a style="color: #fff;display: inline-block;" href="{{asset('')}}login">Login</a></li>
@@ -29,6 +24,8 @@
             </div>
         </div>
     </section>
+
+
 
     <!--end header top-->
     <nav class="navbar wow fadeInDown" data-wow-duration="1s">
@@ -112,7 +109,7 @@
                                         </div>
                                     </form>
                                 </div>
-                                NU</div>
+                            </div>
                         </div>
                     </li>
                 </ul>

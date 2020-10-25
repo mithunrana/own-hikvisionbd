@@ -220,9 +220,12 @@ $SiteProfile = App\SiteProfile::first();
 <!-- Product Modal End-->
 
 
+@php
+ $DiscoverProduct = count(App\DiscoverProducts::where('ActiveStatus','1')->get());
+@endphp
 
 
-
+@if($DiscoverProduct>0)
 <!--start discover area-->
 <section class="discover-area clearfix py-4 wow fadeInDown" data-wow-duration="1s">
     <div class="container">
@@ -275,14 +278,18 @@ $SiteProfile = App\SiteProfile::first();
             </div>
         </div>
     </div>
-
 </section>
 <!--end discover area-->
+@endif
 
 
 
+@php
+    $SolutionCount = count(App\Solutions::where('ActiveStatus','1')->get());
+@endphp
 
 
+@if($SolutionCount>0)
 <!--start solution area-->
 <section class="solution-area clearfix wow fadeInDown" data-wow-duration="1s">
     <div class="container">
@@ -329,11 +336,17 @@ $SiteProfile = App\SiteProfile::first();
     </div>
 </section>
 <!--end solution area-->
+@endif
 
 
 
+@php
+    $CertificateCount = count(App\AuthorizationCertificate::where('ActiveStatus','1')->get());
+    $TrainingCount = count(App\Training::where('ActiveStatus','1')->get());
+@endphp
 
 
+@if($CertificateCount>0 or $TrainingCount>0)
 <!--start tainings area-->
 <section class="training-area clearfix py-4 wow fadeInDown" data-wow-duration="1s">
     <div class="container">
@@ -394,6 +407,7 @@ $SiteProfile = App\SiteProfile::first();
     </div>
 </section>
 <!--end tainings area-->
+@endif
 
 
 
@@ -436,6 +450,7 @@ $SiteProfile = App\SiteProfile::first();
             @php
                 $eventscount = App\Events::orderBy('id','DESC')->where('ActiveStatus',1)->count();
             @endphp
+
             @if($eventscount>0)
                 <div class="col-lg-6 wow fadeInDown" data-wow-duration="1s">
                     <div class="ml-1 mb-2">
