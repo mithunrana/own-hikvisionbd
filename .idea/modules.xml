@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/hikvisionbd-laravel.iml" filepath="$PROJECT_DIR$/.idea/hikvisionbd-laravel.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../drinkcan/.idea/hikvisionbd-laravel.iml" filepath="$PROJECT_DIR$/../drinkcan/.idea/hikvisionbd-laravel.iml" />
     </modules>
   </component>
 </project>
