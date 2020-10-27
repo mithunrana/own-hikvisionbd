@@ -413,27 +413,6 @@ nav {
 ****************** ********************/
 
 
-.showcase .carousel-item {
-    height: 70vh;
-}
-
-.showcase .carousel-img-1 {
-
-    background-size: cover;
-    background-position: center center;
-}
-
-.showcase .carousel-img-2 {
-    background-size: cover;
-    background-position: center center;
-}
-
-.showcase .carousel-img-3 {
-    background-size: cover;
-    background-position: center center;
-
-}
-
 
 
 
@@ -604,6 +583,9 @@ nav {
 .products-slider-custom .slick-dots {
     bottom: -35px;
 }
+
+
+
 
 .p-compare label,
 input {
