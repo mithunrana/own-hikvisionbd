@@ -29,9 +29,9 @@
 
     <!--end header top-->
     <nav class="navbar wow fadeInDown" data-wow-duration="1s">
-        <div class="container">
+        <div style="padding-right: 0px;padding-left: 0px;" class="container">
             <a class="navbar-brand" href="{{asset('')}}">
-                <img style="max-width: 100px;" src="{{asset('')}}{{$SiteProfile->logo->imageurl}}" class="logo" title="{{$SiteProfile->MainLogoTitleText}}" alt="{{$SiteProfile->MainLogoAltText}}">
+                <img style="max-width: 130px;" src="{{asset('')}}{{$SiteProfile->logo->imageurl}}" class="logo" title="{{$SiteProfile->MainLogoTitleText}}" alt="{{$SiteProfile->MainLogoAltText}}">
             </a>
             <div class="main-nav ml-auto">
                 <ul class="nav-ul">
