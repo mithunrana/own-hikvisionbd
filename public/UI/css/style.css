@@ -1275,6 +1275,60 @@ footer {
 
 
 
+/********************** **************************
+				datasheet design
+*********************** *************************/
+
+.tech-specs-items-description {
+    font-size: 1rem;
+    padding-left: 1.25rem;
+    padding-bottom: 2.5rem;
+    margin-bottom: 0;
+    list-style-type: none;
+    background-color: #fff;
+}
+
+.tech-specs-items-description__title--heading {
+    font-weight: 600;
+    color: #d7000f;
+    text-transform: capitalize;
+    display: inline-block;
+    width: 26%;
+    line-height: normal;
+}
+
+.tech-specs-items-description-list {
+    border-bottom: 1px solid #f2f2f2;
+    line-height: 2.6;
+    display: flex;
+}
+
+.tech-specs-items-description__title {
+    color: #000;
+    font-weight: 600;
+    display: inline-block;
+    width: 26%;
+    text-transform: capitalize;
+}
 
 
+.product-specification h1{
+    font-size: 20px;
+    padding: 15px;
+}
 
+.product-specification h2{
+    font-size: 18px;
+    padding: 15px;
+}
+
+.product-specification h3{
+    font-size: 16px;
+    padding: 15px;
+}
+
+.product-specification p{
+    font-size: 17px;
+    padding: 15px;
+    color:black;
+}
