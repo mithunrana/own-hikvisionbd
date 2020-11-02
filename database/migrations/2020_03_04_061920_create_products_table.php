@@ -30,6 +30,7 @@ class CreateProductsTable extends Migration
             $table->text('BrowserTitle');
             $table->longText('SeoKeyword')->nullable();
             $table->longText('SeoDescription')->nullable();
+            $table->text('EmbeddedCode')->nullable();
             $table->text('ImageAltText')->nullable();
             $table->text('ImageTitleText')->nullable();
             $table->text('StructuredData')->nullable();

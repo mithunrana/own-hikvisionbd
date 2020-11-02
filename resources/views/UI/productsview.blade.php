@@ -72,14 +72,22 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="product-specification card main-product-details" style="border-radius: 0;padding:2px;margin-top: 15px;">
                     {!! html_entity_decode($Product->Specification) !!}
                 </div>
 
-                <div style="margin-top: 10px;margin-bottom: 10px;" class="embedded-tutorial-view video-wrapper">
-                    <iframe width="100%" height="450" src="https://www.youtube.com/embed/zLX-Af2CRi4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
-                </div>
+                @if($Product->EmbeddedCode !=null)
+                    <div style="margin-top: 10px;margin-bottom: 10px;" class="embedded-tutorial-view video-wrapper">
+                        {!! html_entity_decode($Product->EmbeddedCode) !!}
+                    </div>
+                @endif
 
+                @if($Product->OptionalContent !=null)
+                <div class="product-specification card main-product-details" style="border-radius: 0;padding:2px;margin-top: 15px;">
+                    {!! html_entity_decode($Product->OptionalContent) !!}
+                </div>
+                @endif
             </div>
         </div>
     </div>

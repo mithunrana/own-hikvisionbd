@@ -186,6 +186,8 @@ class ProductsController extends Controller
             $Products->RegularPrice = $request->RegularPrice;
             $Products->CurrentPrice = $request->CurrentPrice;
             $Products->PartnerPrice = $request->PartnerPrice;
+            $Products->EmbeddedCode = $request->EmbeddedCode;
+            $Products->OptionalContent = $request->OptionalContent;
             $Products->save();
         }else{
             $Products->Model = $request->Model;
@@ -209,6 +211,8 @@ class ProductsController extends Controller
             $Products->RegularPrice = $request->RegularPrice;
             $Products->CurrentPrice = $request->CurrentPrice;
             $Products->PartnerPrice = $request->PartnerPrice;
+            $Products->EmbeddedCode = $request->EmbeddedCode;
+            $Products->OptionalContent = $request->OptionalContent;
             $Products->save();
         }
         return redirect()->to('admin/products-manage')->with('message','Blog Added Successfully');
@@ -300,6 +304,8 @@ class ProductsController extends Controller
         $Products->RegularPrice = request('RegularPrice');
         $Products->CurrentPrice = request('CurrentPrice');
         $Products->PartnerPrice = request('PartnerPrice');
+        $Products->EmbeddedCode = request('EmbeddedCode');
+        $Products->OptionalContent = request('OptionalContent');
         $Products->save();
         return redirect()->to('admin/products-manage')->with('message','Products Update Successfully');
     }
