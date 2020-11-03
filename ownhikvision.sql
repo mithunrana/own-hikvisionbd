@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 02, 2020 at 07:54 PM
+-- Generation Time: Nov 03, 2020 at 07:56 PM
 -- Server version: 10.4.13-MariaDB
 -- PHP Version: 7.4.7
 
@@ -144,6 +144,23 @@ CREATE TABLE `discover_products` (
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `discover_products`
+--
+
+INSERT INTO `discover_products` (`id`, `FeaturedImage`, `DiscoverName`, `PrimaryCategoryId`, `ImageTitleText`, `ImageAltText`, `ActiveStatus`, `created_at`, `updated_at`) VALUES
+(1, '514', 'HD CAMERA', '10', NULL, NULL, '1', '2020-11-03 09:41:35', '2020-11-03 10:36:33'),
+(2, '515', 'IP Camera', '11', NULL, NULL, '1', '2020-11-03 10:10:39', '2020-11-03 10:36:17'),
+(3, '513', 'Hikvision DVR', '13', 'Hikvision DVR', 'hikvision dvr', '1', '2020-11-03 10:45:34', '2020-11-03 10:45:38'),
+(4, '517', 'Hikvision NVR', '12', NULL, NULL, '1', '2020-11-03 10:47:43', '2020-11-03 10:47:48'),
+(5, '520', 'Thermal Camera', '19', NULL, NULL, '1', '2020-11-03 10:50:10', '2020-11-03 10:58:51'),
+(6, '512', 'Cable', '18', NULL, NULL, '1', '2020-11-03 10:50:26', '2020-11-03 10:58:47'),
+(7, '518', 'PTZ Camera', '20', NULL, NULL, '1', '2020-11-03 10:50:59', '2020-11-03 10:58:43'),
+(8, '511', 'Accessories', '16', NULL, NULL, '1', '2020-11-03 10:51:23', '2020-11-03 10:58:40'),
+(9, '519', 'Switch', '17', NULL, NULL, '1', '2020-11-03 10:52:07', '2020-11-03 10:58:36'),
+(10, '510', 'Access Control', '14', NULL, NULL, '1', '2020-11-03 10:55:20', '2020-11-03 10:58:34'),
+(11, '516', 'Monitor', '21', NULL, NULL, '1', '2020-11-03 10:58:23', '2020-11-03 10:58:29');
 
 -- --------------------------------------------------------
 
@@ -743,7 +760,18 @@ INSERT INTO `products_images` (`id`, `imageurl`, `created_at`, `updated_at`) VAL
 (506, 'productsImage/hikvision-DS-2CD1221-I5.jpg', '2020-11-02 00:08:31', '2020-11-02 00:08:31'),
 (507, 'productsImage/hikvision-DS-2CE16H0T-IT5F.jpg', '2020-11-02 02:17:14', '2020-11-02 02:17:14'),
 (508, 'productsImage/hikvision-DS-2CE16H0T-IT3F.jpg', '2020-11-02 02:18:28', '2020-11-02 02:18:28'),
-(509, 'productsImage/hikvision-DS-2CD2110F-I.jpg', '2020-11-02 04:56:48', '2020-11-02 04:56:48');
+(509, 'productsImage/hikvision-DS-2CD2110F-I.jpg', '2020-11-02 04:56:48', '2020-11-02 04:56:48'),
+(510, 'productsImage/hikvision-access-control.jpg', '2020-11-03 10:34:59', '2020-11-03 10:34:59'),
+(511, 'productsImage/hikvision-accessories.jpg', '2020-11-03 10:35:04', '2020-11-03 10:35:04'),
+(512, 'productsImage/hikvision-cable.jpg', '2020-11-03 10:35:11', '2020-11-03 10:35:11'),
+(513, 'productsImage/hikvision-dvr.jpg', '2020-11-03 10:35:15', '2020-11-03 10:35:15'),
+(514, 'productsImage/hikvision-hd-camera.jpg', '2020-11-03 10:35:20', '2020-11-03 10:35:20'),
+(515, 'productsImage/hikvision-ip-camera.jpg', '2020-11-03 10:35:26', '2020-11-03 10:35:26'),
+(516, 'productsImage/hikvision-monitor.jpg', '2020-11-03 10:35:32', '2020-11-03 10:35:32'),
+(517, 'productsImage/hikvision-nvr.jpg', '2020-11-03 10:35:38', '2020-11-03 10:35:38'),
+(518, 'productsImage/hikvision-ptz-camera.jpg', '2020-11-03 10:35:44', '2020-11-03 10:35:44'),
+(519, 'productsImage/hikvision-switch.jpg', '2020-11-03 10:35:50', '2020-11-03 10:35:50'),
+(520, 'productsImage/hikvision-thermal-camera.jpg', '2020-11-03 10:35:55', '2020-11-03 10:35:55');
 
 -- --------------------------------------------------------
 
@@ -778,7 +806,8 @@ INSERT INTO `products_primary_categories` (`id`, `CategoryName`, `CategoryUrl`, 
 (17, 'Switch', 'hikvision-switch-price-bangladesh', 'Hikvision Network  Switch Price In Bangladesh', '<p>Hikvision Network Switch Price In Bangladesh</p>', 'Hikvision Network  Switch Price In Bangladesh', 'Hikvision Network  Switch Price In Bangladesh', 'Hikvision Network Switch Price In Bangladesh', '2020-11-02 12:12:52', '2020-11-02 12:12:52'),
 (18, 'Cable', 'hikvision-cable-price-bangladesh', 'Hikvision Cable Price In Bangladesh', '<p>Hikvision Cable Price In Bangladesh</p>', 'Hikvision Cable Price In Bangladesh', 'Hikvision Cable Price In Bangladesh', 'Hikvision Cable Price In Bangladesh | Cat6 Cat5', '2020-11-02 12:16:06', '2020-11-02 12:16:06'),
 (19, 'Thermal Camera', 'hikvision-thermal-camera-price-bangladesh', 'Hikvision Thermal Camera Price In Bangladesh', '<p>Hikvision Thermal Camera Price In Bangladesh</p>', 'Hikvision Thermal Camera Price In Bangladesh', 'Hikvision Thermal Camera Price In Bangladesh', 'Hikvision Thermal Camera Price In Bangladesh', '2020-11-02 12:34:01', '2020-11-02 12:34:01'),
-(20, 'PTZ Camera', 'hikvision-ptz-camera-price-bangladesh', 'Hikvision PTZ Camera Price In Bangladesh', '<p>Hikvision PTZ Camera Price In Bangladesh</p>', 'Hikvision PTZ Camera Price In Bangladesh', 'Hikvision PTZ Camera Price In Bangladesh', 'Hikvision PTZ Camera Price In Bangladesh', '2020-11-02 12:40:59', '2020-11-02 12:40:59');
+(20, 'PTZ Camera', 'hikvision-ptz-camera-price-bangladesh', 'Hikvision PTZ Camera Price In Bangladesh', '<p>Hikvision PTZ Camera Price In Bangladesh</p>', 'Hikvision PTZ Camera Price In Bangladesh', 'Hikvision PTZ Camera Price In Bangladesh', 'Hikvision PTZ Camera Price In Bangladesh', '2020-11-02 12:40:59', '2020-11-02 12:40:59'),
+(21, 'Monitor', 'hikvision-monitor-price-bangladesh', 'Hikvision Monitor Price In Bangladesh', '<p>Hikvision Monitor Price In Bangladesh</p>', 'Hikvision Monitor Price In Bangladesh', 'Hikvision Monitor Price In Bangladesh', 'Hikvision Monitor Price In Bangladesh', '2020-11-03 10:57:49', '2020-11-03 10:57:49');
 
 -- --------------------------------------------------------
 
@@ -971,6 +1000,17 @@ CREATE TABLE `solutions` (
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `solutions`
+--
+
+INSERT INTO `solutions` (`id`, `BrowserTitle`, `Permalink`, `SolutionsName`, `SeoKeyword`, `SeoDescription`, `FeaturedImage1`, `FeaturedImage2`, `ImageAltText`, `ImageTitleText`, `SolutionShortText`, `SolutionsDetails`, `ActiveStatus`, `created_at`, `updated_at`) VALUES
+(1, 'test', '#', 'test', 'test', 'test test', 14, 11, NULL, NULL, '<p>test</p>', '<p>test</p>', 1, '2020-11-03 11:35:57', '2020-11-03 11:38:31'),
+(2, 'test 2', '#', 'test 2', 'test 2', 'test 2', 13, 9, NULL, NULL, '<p>test 2</p>', '<p>test 2</p>', 1, '2020-11-03 11:43:43', '2020-11-03 11:43:47'),
+(3, 'tet 3', '#', 'tet 3', 'tet 3', 'tet 3', 19, 7, NULL, NULL, '<p>tet 3</p>', '<p>tet 3</p>', 1, '2020-11-03 11:45:09', '2020-11-03 11:45:12'),
+(4, 'TEST 4', 'test 4', 'TEST 4', 'TEST 4', 'TEST 4', 23, 9, NULL, NULL, '<p>TEST 4</p>', '<p>TEST 4</p>', 1, '2020-11-03 11:45:54', '2020-11-03 11:45:59'),
+(5, 'FASDF', 'fasdf', 'FASDF', 'FASDF', 'FASDF', 28, 7, NULL, NULL, '<p>FASDF</p>', '<p>FASDF</p>', 1, '2020-11-03 11:46:39', '2020-11-03 11:46:43');
 
 -- --------------------------------------------------------
 
@@ -1266,7 +1306,7 @@ ALTER TABLE `c_c_t_v_brands`
 -- AUTO_INCREMENT for table `discover_products`
 --
 ALTER TABLE `discover_products`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT for table `electro_prono_sliders`
@@ -1320,13 +1360,13 @@ ALTER TABLE `products_brands`
 -- AUTO_INCREMENT for table `products_images`
 --
 ALTER TABLE `products_images`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=510;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=521;
 
 --
 -- AUTO_INCREMENT for table `products_primary_categories`
 --
 ALTER TABLE `products_primary_categories`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
 
 --
 -- AUTO_INCREMENT for table `products_secondary_categories`
@@ -1368,7 +1408,7 @@ ALTER TABLE `software_lists`
 -- AUTO_INCREMENT for table `solutions`
 --
 ALTER TABLE `solutions`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `support_models`

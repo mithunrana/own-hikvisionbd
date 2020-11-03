@@ -170,7 +170,6 @@ $SiteProfile = App\SiteProfile::first();
                     </div>
                 </div>
             @endforeach
-
         </div>
     </div>
 </section>
@@ -231,51 +230,38 @@ $SiteProfile = App\SiteProfile::first();
     <div class="container">
         <div class="row">
             <div class="col">
-                <div class="ml-1 mb-4">
-                    <h4 class="text-custom">Discover Products
-                        <div class="next-prev float-right mr-2">
-                            <i class="fa fa-angle-left prv-disc ps-control"></i>
-                            <i class="fa fa-angle-right nxt-disc ps-control"></i>
-                        </div>
+                    <h4 style="text-align: center;" class="text-custom">Hikvision Discover Products
                     </h4>
-                </div>
+                <p style="text-align: center;color:#787878;padding-top:7px;padding-bottom:7px; ">
+                    Hikvision discover lot of security items HD CCTV Camera, IP CCTV Camera, Digital Video Recorder (DVR),
+                    Network Video Recorder(NVR), Pan Till Zoom PTZ Camera, Thermal Camera, CCTV Camera Equipment accessories,
+                    Display Monitor, networking switch, networking cable</p>
             </div>
         </div>
         <div class="row">
-            <div class="col">
-                <div class="products-box">
-                    <div class="discover-slider products-slider-custom">
-                        @foreach(App\DiscoverProducts::orderBy('id','DESC')->where('ActiveStatus','1')->get() as $DiscoverProduct)
-                        <div class="products-item">
-                            <!--dp-items-->
-                            <div class="dp-items">
-                                <div class="card">
-                                    <a href="#">
-                                        <div class="card">
-                                            <div class="dp-img">
-                                                <a href="{{asset('')}}products/{{$DiscoverProduct->primaryCategoryDetails->CategoryUrl}}">
-                                                    <img src="{{asset('')}}{{$DiscoverProduct->image->imageurl}}" class="img-fluid">
-                                                </a>
+            @foreach(App\DiscoverProducts::orderBy('id','DESC')->where('ActiveStatus','1')->get() as $DiscoverProduct)
+                <div style="margin-bottom: 10px;" class="col-sm-3 col-6">
+                        <div class="discover-products-item">
+                                <!--dp-items-->
+                                    <div class="card">
+                                        <a href="#">
+                                            <div class="card">
+                                                <div class="dp-img">
+                                                    <a href="{{asset('')}}products/{{$DiscoverProduct->primaryCategoryDetails->CategoryUrl}}">
+                                                        <img src="{{asset('')}}{{$DiscoverProduct->image->imageurl}}" class="img-fluid">
+                                                    </a>
+                                                </div>
                                             </div>
-                                            <div class="dp-arrow-back">
-                                                <a href="{{asset('')}}products/{{$DiscoverProduct->primaryCategoryDetails->CategoryUrl}}">
-                                                    <img src="{{asset('')}}UI/img/arrow-black.png" alt="arrow back">
-                                                </a>
+                                            <div class="dp-name">
+                                                <strong>
+                                                    <a style="margin-bottom: 0px;color: #787878;" href="{{asset('')}}products/{{$DiscoverProduct->primaryCategoryDetails->CategoryUrl}}">{{$DiscoverProduct->DiscoverName}}</a>
+                                                </strong>
                                             </div>
-                                        </div>
-                                        <div class="dp-name">
-                                            <h4>
-                                                <a style="margin-bottom: 0px;color: #787878;" href="{{asset('')}}products/{{$DiscoverProduct->primaryCategoryDetails->CategoryUrl}}">{{$DiscoverProduct->DiscoverName}}</a>
-                                            </h4>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
+                                        </a>
+                                    </div>
                         </div>
-                        @endforeach
-                    </div>
                 </div>
-            </div>
+            @endforeach
         </div>
     </div>
 </section>
