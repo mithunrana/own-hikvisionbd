@@ -78,61 +78,11 @@ $SiteProfile = App\SiteProfile::first();
         <div class="row">
             <div class="col">
                 <div class="ml-1 mb-4">
-                    <h4 class="text-custom">Latest Products
-                        <!-- <div class="next-prev float-right mr-2">
-                             <i class="fa fa-angle-left prv ps-control"></i>
-                             <i class="fa fa-angle-right nxt ps-control"></i>
-                         </div>-->
-                    </h4>
+                    <h4 class="text-custom">Latest Products</h4>
                 </div>
             </div>
         </div>
         <div class="row">
-        <!-- class="col">
-                <div class="products-box">
-                    <div class="products-slider products-slider-custom">
-                        @foreach(\App\Products::orderBy('id','DESC')->where('ActiveStatus',1)->skip(0)->take(8)->get() as $Products)
-            <div class="products-item">
-                <div class="product-box">
-                    <div class="product-info">
-                         <div class="product-info-img">
-                             <a href="{{asset('')}}{{$Products->Permalink}}">
-                                            <img src="{{asset('')}}{{$Products->image->imageurl}}" alt="{{$Products->ImageAltText}}">
-                                         </a>
-                                     </div>
-                                     <h6 class="product-name">
-                                         <a style="margin-bottom: 0px;color: #d71920;font-weight: 700;font-size: 16px;" href="{{asset('')}}{{$Products->Permalink}}">{{$Products->Model}}</a>
-                                     </h6>
-                                     <p>
-                                         <a style="margin-bottom: 0px;" href="{{asset('')}}{{$Products->Permalink}}">{{$Products->Name}}</a>
-                                     </p>
-                                </div>
-                                <div class="p-compare">
-                                    <div class="form-check">
-                                        <label class="fomr-chck-label" for="check">
-                                            <input id="check" id="p-check" class="form-check-input" type="checkbox">
-                                            Add to Compare
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="plus-arrow">
-                                    <a href="#THI{{$Products->Model}}" data-toggle="modal">
-                                        <img src="{{asset('')}}UI/img/plus.png" alt="">
-                                    </a>
-                                </div>
-                                <div class="back-arrow">
-                                    <a href="#">
-                                        <img src="{{asset('')}}UI/img/arrow-black.png" alt="">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        @endforeach
-                </div>
-            </div>
-        </div>-->
-
-
             @foreach(\App\Products::orderBy('id','DESC')->where('ActiveStatus',1)->skip(0)->take(8)->get() as $Products)
                 <div style="margin-top: 10px;" class="col-md-4 col-sm-6 col-lg-3 col-12">
                     <div class="product-box">
@@ -150,12 +100,7 @@ $SiteProfile = App\SiteProfile::first();
                             </p>
                         </div>
                         <div class="p-compare">
-                            <div class="form-check">
-                                <label class="fomr-chck-label" for="check">
-                                    <input id="check" id="p-check" class="form-check-input" type="checkbox">
-                                    Add to Compare
-                                </label>
-                            </div>
+                            <ins style="font-size: 16px;background: #fff;color: #d71920;font-weight: 600;margin-right: 10px;text-decoration: none;">{{$Products->CurrentPrice}}৳</ins>
                         </div>
                         <div class="plus-arrow">
                             <a href="#THI{{$Products->Model}}" data-toggle="modal">
@@ -163,7 +108,7 @@ $SiteProfile = App\SiteProfile::first();
                             </a>
                         </div>
                         <div class="back-arrow">
-                            <a href="#">
+                            <a href="{{asset('')}}{{$Products->Permalink}}">
                                 <img src="{{asset('')}}UI/img/arrow-black.png" alt="">
                             </a>
                         </div>

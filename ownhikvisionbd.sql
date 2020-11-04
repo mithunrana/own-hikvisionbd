@@ -1,13 +1,14 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.2
+-- version 4.9.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 03, 2020 at 07:56 PM
--- Server version: 10.4.13-MariaDB
--- PHP Version: 7.4.7
+-- Generation Time: Nov 04, 2020 at 02:13 PM
+-- Server version: 10.4.8-MariaDB
+-- PHP Version: 7.2.23
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -18,7 +19,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `ownhikvision`
+-- Database: `ownhikvisionbd`
 --
 
 -- --------------------------------------------------------
@@ -57,6 +58,13 @@ CREATE TABLE `blog_categories` (
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+--
+-- Dumping data for table `blog_categories`
+--
+
+INSERT INTO `blog_categories` (`id`, `CategoryName`, `CategoryUrl`, `CategorySeoKeyword`, `CategorySeoDescription`, `CategoryBrowserTitle`, `created_at`, `updated_at`) VALUES
+(1, 'test', 'test', 'test', 'test', 'test', '2020-11-03 23:50:08', '2020-11-03 23:50:08');
+
 -- --------------------------------------------------------
 
 --
@@ -83,6 +91,13 @@ CREATE TABLE `blog_tutorials` (
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `blog_tutorials`
+--
+
+INSERT INTO `blog_tutorials` (`id`, `BrowserTitle`, `Permalink`, `BlogName`, `SeoKeyword`, `SeoDescription`, `VideoURL`, `EmbeddedVideo`, `FeaturedImage`, `ImageAltText`, `ImageTitleText`, `BlogDetails`, `StructuredData`, `Category`, `blog_poster`, `ActiveStatus`, `created_at`, `updated_at`) VALUES
+(1, 'test', 'test', 'test', 'test', 'test', 'https://www.youtube.com/watch?v=tfMMX9ewaJ4', 'test', 40, NULL, NULL, '<p>test</p>', 'test', '1', 1, 1, '2020-11-03 23:50:39', '2020-11-03 23:50:43');
 
 -- --------------------------------------------------------
 
@@ -233,10 +248,6 @@ INSERT INTO `images` (`id`, `imageurl`, `created_at`, `updated_at`) VALUES
 (2, 'images/demo image.png', NULL, NULL),
 (3, 'images/super-market.jpg', NULL, NULL),
 (6, 'images/banking-cctv-solutins.jpg', NULL, NULL),
-(7, 'images/banking-finance.png', NULL, NULL),
-(9, 'images/hotel-icon.png', NULL, NULL),
-(10, 'images/supermarkets-solutions-icon.png', NULL, NULL),
-(11, 'images/shopping-mall.png', NULL, NULL),
 (12, 'images/soshine.png', '2020-09-02 23:21:31', '2020-09-02 23:21:31'),
 (13, 'images/bangladesh-ansar-vdp-cctv-solutions.jpg', '2020-09-06 02:33:14', '2020-09-06 02:33:14'),
 (14, 'images/bangladesh-election-commision-cctv-solution.jpg', '2020-09-06 02:33:18', '2020-09-06 02:33:18'),
@@ -253,7 +264,25 @@ INSERT INTO `images` (`id`, `imageurl`, `created_at`, `updated_at`) VALUES
 (25, 'images/hikvision-bangladesh.png', '2020-10-28 10:49:49', '2020-10-28 10:49:49'),
 (27, 'images/hikvision-bangladesh.jpg', '2020-11-02 11:02:21', '2020-11-02 11:02:21'),
 (28, 'images/hikvision-distributor-bangladesh.jpg', '2020-11-02 11:02:27', '2020-11-02 11:02:27'),
-(29, 'images/hikvision-importer-bangladesh.jpg', '2020-11-02 11:02:32', '2020-11-02 11:02:32');
+(29, 'images/hikvision-importer-bangladesh.jpg', '2020-11-02 11:02:32', '2020-11-02 11:02:32'),
+(30, 'images/hospital-solution.png', '2020-11-03 23:17:37', '2020-11-03 23:17:37'),
+(31, 'images/hotel-icon.png', '2020-11-03 23:17:42', '2020-11-03 23:17:42'),
+(32, 'images/hotel-solution-icon.png', '2020-11-03 23:17:47', '2020-11-03 23:17:47'),
+(33, 'images/shopping-mall.png', '2020-11-03 23:18:00', '2020-11-03 23:18:00'),
+(34, 'images/supermarkets-solutions-icon.png', '2020-11-03 23:18:10', '2020-11-03 23:18:10'),
+(35, 'images/train-solution.png', '2020-11-03 23:18:16', '2020-11-03 23:18:16'),
+(36, 'images/air-ports-icon.png', '2020-11-03 23:18:21', '2020-11-03 23:18:21'),
+(37, 'images/banking-finance.png', '2020-11-03 23:18:25', '2020-11-03 23:18:25'),
+(38, 'images/industrial-park.png', '2020-11-03 23:37:00', '2020-11-03 23:37:00'),
+(39, 'images/education.png', '2020-11-03 23:43:59', '2020-11-03 23:43:59'),
+(40, 'images/people-counting.png', '2020-11-03 23:44:05', '2020-11-03 23:44:05'),
+(41, 'images/banking-solution.jpg', '2020-11-04 04:39:48', '2020-11-04 04:39:48'),
+(42, 'images/building-solution.jpg', '2020-11-04 04:39:55', '2020-11-04 04:39:55'),
+(43, 'images/eductaion-solution.jpg', '2020-11-04 04:40:00', '2020-11-04 04:40:00'),
+(44, 'images/industril-park.JPG', '2020-11-04 04:40:05', '2020-11-04 04:40:05'),
+(45, 'images/people-counting-solution.jpg', '2020-11-04 04:40:10', '2020-11-04 04:40:10'),
+(46, 'images/safecity.jpeg', '2020-11-04 04:40:22', '2020-11-04 04:40:22'),
+(48, 'images/supermarket-solution.png', '2020-11-04 04:40:51', '2020-11-04 04:40:51');
 
 -- --------------------------------------------------------
 
@@ -1006,11 +1035,13 @@ CREATE TABLE `solutions` (
 --
 
 INSERT INTO `solutions` (`id`, `BrowserTitle`, `Permalink`, `SolutionsName`, `SeoKeyword`, `SeoDescription`, `FeaturedImage1`, `FeaturedImage2`, `ImageAltText`, `ImageTitleText`, `SolutionShortText`, `SolutionsDetails`, `ActiveStatus`, `created_at`, `updated_at`) VALUES
-(1, 'test', '#', 'test', 'test', 'test test', 14, 11, NULL, NULL, '<p>test</p>', '<p>test</p>', 1, '2020-11-03 11:35:57', '2020-11-03 11:38:31'),
-(2, 'test 2', '#', 'test 2', 'test 2', 'test 2', 13, 9, NULL, NULL, '<p>test 2</p>', '<p>test 2</p>', 1, '2020-11-03 11:43:43', '2020-11-03 11:43:47'),
-(3, 'tet 3', '#', 'tet 3', 'tet 3', 'tet 3', 19, 7, NULL, NULL, '<p>tet 3</p>', '<p>tet 3</p>', 1, '2020-11-03 11:45:09', '2020-11-03 11:45:12'),
-(4, 'TEST 4', 'test 4', 'TEST 4', 'TEST 4', 'TEST 4', 23, 9, NULL, NULL, '<p>TEST 4</p>', '<p>TEST 4</p>', 1, '2020-11-03 11:45:54', '2020-11-03 11:45:59'),
-(5, 'FASDF', 'fasdf', 'FASDF', 'FASDF', 'FASDF', 28, 7, NULL, NULL, '<p>FASDF</p>', '<p>FASDF</p>', 1, '2020-11-03 11:46:39', '2020-11-03 11:46:43');
+(1, 'Retail', '#', 'Retail', 'Retail', 'Retail', 48, 40, NULL, NULL, '<p>&nbsp;</p>\r\n<h1 class=\"title\">Retail</h1>\r\n<p>&nbsp;</p>', '<p>&nbsp;</p>\r\n<h1 class=\"title\">Retail</h1>\r\n<p>&nbsp;</p>', 1, '2020-11-03 11:35:57', '2020-11-04 05:01:05'),
+(2, 'Building', '#', 'Building', 'Building', 'Building', 42, 32, NULL, NULL, '<p>&nbsp;</p>\r\n<h1 class=\"title\">Building</h1>\r\n<p>&nbsp;</p>', '<p>&nbsp;</p>\r\n<h1 class=\"title\">Building</h1>\r\n<p>&nbsp;</p>', 1, '2020-11-03 11:43:43', '2020-11-04 05:00:55'),
+(3, 'Safe City', '#', 'Safe City', 'Safe City', 'Safe City', 46, 31, NULL, NULL, '<p>&nbsp;</p>\r\n<h1 class=\"title\">Safe City</h1>\r\n<p>&nbsp;</p>', '<p>&nbsp;</p>\r\n<h1 class=\"title\">Safe City</h1>\r\n<p>&nbsp;</p>', 1, '2020-11-03 11:45:09', '2020-11-04 05:00:41'),
+(4, 'Education', '#', 'Education', 'Education', 'Education', 43, 39, NULL, NULL, '<h1 class=\"title\">Education</h1>', '<h1 class=\"title\">Education</h1>', 1, '2020-11-03 11:45:54', '2020-11-04 04:58:41'),
+(5, 'Banking', '#', 'Banking', 'Banking', 'Banking', 41, 37, NULL, NULL, '<p>&nbsp;</p>\r\n<h1 class=\"title\">Banking</h1>\r\n<p>&nbsp;</p>', '<p>&nbsp;</p>\r\n<h1 class=\"title\">Banking</h1>\r\n<p>&nbsp;</p>', 1, '2020-11-03 11:46:39', '2020-11-04 04:58:27'),
+(6, 'Industrial Parks', 'industrial parks', 'Industrial Parks', 'Industrial Parks', 'Industrial Parks', 44, 38, 'industrial park', 'industrial park', '<p>&nbsp;</p>\r\n<h1 class=\"title\">Industrial Parks</h1>\r\n<p>&nbsp;</p>', '<p>&nbsp;</p>\r\n<h1 class=\"title\">Industrial Parks</h1>\r\n<p>&nbsp;</p>', 1, '2020-11-03 22:54:53', '2020-11-04 04:52:13'),
+(7, 'People Counting', 'test', 'People Counting', 'People Counting', 'People Counting', 48, 40, NULL, NULL, '<p>&nbsp;</p>\r\n<h1 class=\"title\">People Counting</h1>\r\n<p>&nbsp;</p>', '<p>Calculating the numbers of shoppers who enter your store or mall throughout the day can help you to improve your operations in a number of ways. It becomes possible, for example, to precisely match the number of staff during busy times to the need, improving service, and then reduce staff during quieter times to save on operating costs. In these and a number of other ways, counting people in-store helps retailers optimize their strategies and maximize conversion and revenues. However, the task of accurately counting customers over an extended period of time is a difficult one, particularly as legacy camera technologies are not always up to the task.</p>', 1, '2020-11-03 23:01:51', '2020-11-04 05:37:15');
 
 -- --------------------------------------------------------
 
@@ -1282,13 +1313,13 @@ ALTER TABLE `authorization_certificates`
 -- AUTO_INCREMENT for table `blog_categories`
 --
 ALTER TABLE `blog_categories`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `blog_tutorials`
 --
 ALTER TABLE `blog_tutorials`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `cctv_camera_mega_pixels`
@@ -1324,7 +1355,7 @@ ALTER TABLE `events`
 -- AUTO_INCREMENT for table `images`
 --
 ALTER TABLE `images`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=49;
 
 --
 -- AUTO_INCREMENT for table `migrations`
@@ -1408,7 +1439,7 @@ ALTER TABLE `software_lists`
 -- AUTO_INCREMENT for table `solutions`
 --
 ALTER TABLE `solutions`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT for table `support_models`

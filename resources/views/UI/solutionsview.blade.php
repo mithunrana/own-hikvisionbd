@@ -51,23 +51,31 @@
 
 <!--start success history area-->
 <section class="success-history clearfix pb-3 wow fadeInDown" data-wow-duration="1s">
-    <div class="container">
-        <div style="margin-top: 10px;" class="row">
-            <div class="col-sm-5 col-12 col-lg-5 col-md-4 col-xl-4">
+    <div style="margin-top: 10px;" class="container">
+        <div class="row">
+            <div class="col-lg-8 col-sm-12 col-12">
+                    <div class="solution-image-box">
+                         <img style="width: 100%;" src="{{asset('')}}{{$Solution->featuredimage1->imageurl}}">
+                    </div>
+                    <div class="solution-content-box">
+                        {!! html_entity_decode($Solution->SolutionsDetails) !!}
+                    </div>
+            </div>
+            <div class="col-lg-4 col-sm-12 col-12">
                 <div class="row">
-                    <img src="{{asset('')}}{{$Solution->featuredimage1->imageurl}}">
+                    @foreach(\App\Solutions::orderBy('id','DESC')->skip(0)->take(6)->get() as $RelatedSolution)
+                        <div style="margin-top: 10px" class="col-lg-12 col-6 col-sm-6 col-md-6 related-solution-box">
+                            <a href="{{asset('')}}solutions/{{$RelatedSolution->Permalink}}">
+                                <img src="{{asset('')}}{{$RelatedSolution->featuredimage1->imageurl}}">
+                            </a>
+                            <a href="{{asset('')}}solutions/{{$RelatedSolution->Permalink}}">
+                                <h4 style="margin-top: 3px;margin-bottom: 3px;color: grey;">{{$RelatedSolution->SolutionsName}}</h4>
+                            </a>
+                            </a>
+                        </div>
+                    @endforeach
                 </div>
             </div>
-            <div class="col-sm-7 col-12 col-lg-7 col-md-8 col-xl-8">
-                <div style="padding-left: 10px;" class="row">
-                {!! html_entity_decode($Solution->SolutionShortText) !!}
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container">
-        <div style="margin-top: 10px;" class="row">
-            {!! html_entity_decode($Solution->SolutionsDetails) !!}
         </div>
     </div>
 </section>
