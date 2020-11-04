@@ -52,7 +52,6 @@
                     <li class="mega-dd-btn"><a href="{{asset('')}}solutions">Solutions </a></li>
                     <li class="mega-dd-btn"><a target="_blank" href="https://www.ezvizlife.com/">EZVIZ </a></li>
                     <li class="mega-dd-btn"><a href="{{asset('')}}hikvision-support-bangladesh">Support </a>
-                    <li class="mega-dd-btn"><a href="{{asset('')}}news">News </a></li>
                     <li class="mega-dd-btn">
                         <a href="{{asset('')}}contact">Contact </a>
                     </li>
@@ -123,6 +122,11 @@
     </nav>
 </header>
 <!--end header-->
+
+
+
+
+
 
 <!--start mobile menu-->
 <div style="overflow-y:scroll;" class="mobile-menu">
