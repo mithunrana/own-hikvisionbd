@@ -1,18 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f101b50b-501f-4382-a85f-fe4b512560b6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/banking-finance.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/banking-finance.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/hotel-icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/hotel-icon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/shopping-mall.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/shopping-mall.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/supermarkets-solutions-icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/supermarkets-solutions-icon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/UI/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/UI/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/UI/solutionsmain.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/UI/solutionsmain.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/UI/solutionsview.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/UI/solutionsview.blade.php" afterDir="false" />
-    </list>
+    <list default="true" id="f101b50b-501f-4382-a85f-fe4b512560b6" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,21 +15,7 @@
     </execution>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/views/UI/solutionsview.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="66" column="70" selection-start-line="66" selection-start-column="70" selection-end-line="66" selection-end-column="70" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#section#2;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h4#0;n#a#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#section#2;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -266,16 +241,15 @@
       <workItem from="1604471549644" duration="1777000" />
       <workItem from="1604473371406" duration="300000" />
       <workItem from="1604488518388" duration="1779000" />
-      <workItem from="1604494685857" duration="881000" />
+      <workItem from="1604494685857" duration="1101000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16116000" />
+    <option name="totallyTimeSpent" value="16336000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25426438" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
