@@ -81,7 +81,7 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="main-copy">
-                        <p style="margin-bottom: 5px;">2020 HIKVISION Digital Technology Co, Ltd. All Rights Reserved.</p>
+                        <p style="margin-bottom: 5px;">{{$SiteProfile->CopyRightText}}</p>
                         <a href="#">Legal</a> |
                         <a href="#">Privacy Policy</a>
                     </div>

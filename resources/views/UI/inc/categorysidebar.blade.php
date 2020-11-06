@@ -1,6 +1,3 @@
-<div class="pc-title">
-    <h4 style="color:#d71920;">Categories</h4>
-</div>
 <div class="accordion" id="accordionExample2">
     @foreach($Categories as $Category)
         <div class="cat-box">

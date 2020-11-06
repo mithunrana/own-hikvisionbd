@@ -12,5 +12,8 @@ class ProductsSecondaryCategory extends Model
         return $this->belongsTo(ProductsPrimaryCategory::class,'PrimaryCategoryId');
     }
 
+    public function Products(){
+        return $this->hasMany(Products::class,'Category');
+    }
 
 }

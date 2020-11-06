@@ -63,10 +63,10 @@
                                 <div class="col">
                                     <ul class="mega-item">
                                         <li><a href="{{asset('')}}portfolio">Success History</a></li>
-                                        <li><a href="{{asset('')}}mega-trading">About Mega Trading</a></li>
+                                        <li><a href="{{asset('')}}mega-trading">About Tech Help Info</a></li>
                                         <li><a href="{{asset('')}}contact">Contact Us</a></li>
                                         <li><a href="{{asset('')}}career-hikvision">Career</a></li>
-                                        <li><a href="{{asset('')}}hikvision-importer-bangladesh">Hikvision Importer</a></li>
+                                        <li><a href="{{asset('')}}hikvision-importer-bangladesh">Hikvision Importer In Bangladesh</a></li>
                                         <li><a href="{{asset('')}}hikvision-distributor-bangladesh">Hikvision Distributor In Bangladesh</a></li>
                                     </ul>
                                 </div>

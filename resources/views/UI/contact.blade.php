@@ -140,7 +140,7 @@
                 </div>
 
                 <div style="background-color: #6d6e71;color:white;margin-top: 10px;padding-top: 10px;" class="col-md-3 col-sm-4 col-xs-12 address-block">
-                    <h4 style="font-size: 20px;">{{$SiteProfile->SiteName}}</h4>
+                    <h4 style="font-size: 20px;">Tech Help Info</h4>
                     <ul style="list-style: none;padding-left:0px;" class="list">
                         <li style="display: block;margin-bottom: 8px;position: relative;padding-left: 28px;">
                             <div style="position: absolute;left: 0;font-size: 18px;" class="icon"><span class="fa fa-map-marker"></span></div>
@@ -155,7 +155,7 @@
                             <p>{{$SiteProfile->CorporateEmail}}</p>
                         </li>
                     </ul>
-                    <h4>Headquarters</h4>
+                    <h4>Local Address</h4>
                     <ul style="list-style: none;padding-left:0px;" class="list">
                         <li style="display: block;margin-bottom: 8px;position: relative;padding-left: 28px;">
                             <div style="position: absolute;left: 0;font-size: 18px;" class="icon"><span class="fa fa-map-marker"></span></div><p>{{$SiteProfile->HeadAddress}}</p>

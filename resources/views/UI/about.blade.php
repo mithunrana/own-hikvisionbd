@@ -61,7 +61,7 @@
                             </div>
                             <div class="col-md-5">
                                 <div class="mt-img">
-                                    <img src="{{asset('')}}UI/images/service.jpg" class="img-fluid mb-2" alt="">
+                                    <img src="{{asset('')}}UI/images/technical-support.png" class="img-fluid mb-2" alt="">
                                 </div>
                             </div>
                         </div>
@@ -100,7 +100,7 @@
                         <div class="row">
                             <div class="col-md-7">
                                 <div class="mt-txt pr-2">
-                                    <h4><a style="color:darkred" href="https://www.techhelpinfo.com/about"> Vission  Tech Help Info></a></h4>
+                                    <h4><a style="color:darkred" href="https://www.techhelpinfo.com/about"> Vission  Tech Help Info</a></h4>
                                     <p style="font-size: 14px;">We are committed to explore creative ways to better perceive and understand our world. and we make the world secure and user friendly can user use the technolgy very easily</p>
                                 </div>
                             </div>

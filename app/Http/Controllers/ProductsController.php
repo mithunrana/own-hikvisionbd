@@ -577,6 +577,7 @@ class ProductsController extends Controller
         Products::whereIn('id', $Products)->update(['ActiveStatus' => '0','Category' => '0']);
         ProductsSecondaryCategory::where('PrimaryCategoryId', $id)->delete();
         $PrimaryCategory = ProductsPrimaryCategory::find($id);
+        DiscoverProducts::where('PrimaryCategoryId',$id)->delete();
         $PrimaryCategory->delete();
         return redirect()->to('admin/products-primary-category')->with('message','Category Delete Successfully');
     }
