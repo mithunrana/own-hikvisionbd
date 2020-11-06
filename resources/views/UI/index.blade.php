@@ -99,7 +99,11 @@
                             </p>
                         </div>
                         <div class="p-compare">
-                            <ins style="font-size: 16px;background: #fff;color: #d71920;font-weight: 600;margin-right: 10px;text-decoration: none;">{{$Products->CurrentPrice}}৳</ins>
+                            @if($Products->PriceStatus == '1')
+                                <ins style="font-size: 16px;background: #fff;color: #d71920;font-weight: 600;margin-right: 10px;text-decoration: none;">{{$Products->CurrentPrice}}৳</ins>
+                            @else
+                                <ins style="font-size: 16px;background: #fff;color: #d71920;font-weight: 600;margin-right: 10px;text-decoration: none;">Call For Price</ins>
+                            @endif
                         </div>
                         <div class="plus-arrow">
                             <a href="#THI{{$Products->Model}}" data-toggle="modal">
