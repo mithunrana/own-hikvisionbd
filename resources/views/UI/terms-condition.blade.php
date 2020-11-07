@@ -1,4 +1,6 @@
-
+@php
+    $SiteProfile = App\SiteProfile::first();
+@endphp
 @php
     $title = "About Us";
     $keywords =  "about us, tech help info contact number, tech help info office address, tech help info mobile number, tech help info address, address, software company BD, software company bangladesh,
@@ -9,90 +11,68 @@
 @include('UI.inc.headersource')
 @include('UI.inc.menubar')
 
-<div class="container">
-    <nav style="margin-top: 10px;" aria-label="breadcrumb">
+<div class="container-fluid">
+    <nav style="margin-top: 10px;border-bottom: 0px;" aria-label="breadcrumb">
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="{{asset('')}}">Home</a></li>
-            <li class="breadcrumb-item active" aria-current="page">About Us</li>
+            <li class="breadcrumb-item active" aria-current="page">General Terms Of Use</li>
         </ol>
     </nav>
 </div>
 
 
 <div class="container">
-    <div class="row">
+    <div style="padding: 20px" class="terms-box">
+        <div class="row">
+            <p style="font-size: 1rem;line-height: 1.38;text-align: center;color: #505050;margin: 0;padding: 0;text-align: left;">
+                These General Terms of Use (“Terms”) governs your access to and use of the website (www.hikvisionbd.com)
+                and its sub-sites (collectively the “Site”) provided and administered by
+                <a href="https://www.techhelpinfo.com/">Tech Help Info</a> Group Of Company. and its affiliates (“Hikvision”, “we”, “our”, or “us”).<br><br>
+                Please read these Terms carefully. By accessing the Site you acknowledge that you have read, understood and agreed to these Terms.
+                In case you do not understand or agree to any of these Terms, you should immediately exit the Site.
+            </p><br><br>
 
-        <p style="margin-top: 10px;">Dear Customers, Tech Help Info always places the highest importance on customers.
-            Nevertheless, in order to improve customer service quality, timeliness and speed,
-            some rules and regulations have to be followed. Special request to the esteemed customers to follow the following
-            rules well before buying computer products from Tech help Info Thanks.<br><br>
-            The warranties on the products declared at the time of sale are basically warranties
-            issued by the manufacturer. This means that the warranty service of the product sold is
-            mainly carried by the parent company of the specific brand. Each brand is independent in terms
-            of warranty service variation and their different terms are mentioned on their own official website.
-            In this case, the subsidiary Star Tech is working as
-            a means to enforce the warranty terms of service of the original brand companies.
-        </p>
-        <h2 style="margin-top: 0px;">
-            <b>The warranty terms set by the manufacturer are as follows:</b>
-        </h2>
-        <p style="margin-top: 0px;">
-            >> We follow the warranty policy of each product given by International, Domestic and Bangladesh Computer Society (BCS).
-        </p>
-        <p style="margin-top: 0px;">
-            >> Tech Help Info The warranty of most of the products imported by the company
-            is short-lived and some of the products are replaced as soon as the complaint is received.
-        </p>
-        <p style="margin-top: 0px;">
-            >> Warranty is not provided on all the products sold. The warranty is valid only for those products for
-            which the parent company has declared a warranty period.
-        </p >
-        <p style="margin-top: 0px;">
-            >> Depending on the brand and model of the laptop, the warranty is 1-3 years. But the warranty of all
-            laptop batteries and adapters is only 1 year
-        </p>
+            <div style="" class="terms-content-box">
+                <h5>1. Changes to the Terms or Site</h5>
+                <p style="text-align: left;">HIKVISION reserves the right, at its discretion, to modify these Terms, provided certain provisions of these Terms
+                    prove to be incomplete or outdated and further provided that these modifications are reasonable for you, taking into account your interests.
+                </p>
+            </div>
 
-        <p style="margin-top: 0px;">
-            >> If there is no need to change the product of a particular model, Tech Help Info can replace its current stock with the equivalent product of any other brand.
-        </p>
+            <div style="" class="terms-content-box">
+                <h5>2. Privacy</h5>
+                <p style="text-align: left;">This site content manage by Tech Help Info Group Of Company. Tech Help Info Privacy Policy is applicable to the user of personal
+                    information on or through the Site. By using the Site, you agree that HIKVISIONBD.COM can
+                    use such information in accordance with this Privacy Policy.
+                </p>
+            </div>
 
-        <p style="margin-top: 0px;">
-            >> If the product of a particular model is non-repairable and the same or equivalent product is not available in our stock, then a better product from that model can be replaced by depreciation and price adjustment.
-        </p>
+            <div style="" class="terms-content-box">
+                <h5>3. Product Availability</h5>
+                <p style="text-align: left;">The availability of the products and services described on the Site,
+                    and the descriptions of such products and services, may vary in On our stock. Please contact on our office for product stock query and/or services information
+                </p>
+            </div>
 
-        <p style="margin-top: 0px;">
-            >> Tech Help Info will not be responsible if any software or data is damaged or lost during the use of the product or during the service of Tech Help Info. Note that in this case, the responsibility of data recovery or software restoration work will not be on Tech Help Info.
-        </p>
+            <div style="" class="terms-content-box">
+                <h5>4. Links to Third Parties</h5>
+                <p style="text-align: left;">
+                    Although links to third party websites may
+                    be contained in the Site for your convenience, HIKVISIONBD.COM Or Tech Help Info shall not be responsible for any content of any such websites. You might need to review and agree
+                    to applicable rules of use when using such
+                    websites. In addition, a link to third-party website does not imply that HIKVISIONBD.COM Or Tech Help Info endorses the website or the products or services referenced therein.
+                </p>
+            </div>
 
-        <p style="margin-top: 0px;">
-            >> There is no fixed time to return the product after completing the service work after taking the product of the specific model under warranty, this time can be from 5-7 days to a maximum of 35-40 days or more; This is because in most cases, the parts required for repair do not have sufficient buffer
-            stock in the country, so they have to be imported, which is very time consuming.
-        </p>
-
-        <p style="margin-top: 0px;">
-            >> Consumers are informed that most of the warranty products are not repaired, the parts that are damaged are replaced but in most cases are imported from abroad.
-        </p>
-
-        <p style="margin-top: 0px;">
-            >> The computer setup and operating system that is customized at the time of sale is not covered by the warranty.
-        </p>
-
-        <p style="margin-top: 0px;">
-            >> Lifetime Warranty Basically you will get the warranty facility as long as the product is present in the market.
-        </p>
-
-        <p style="margin-top: 0px;">
-            >> Star Tech will be able to set the price for any service outside the scope of the warranty which will be effective subject to the consent of the buyer.
-        </p>
-
-        <p style="margin-top: 0px;">
-            >> In case of service warranty, if any part needs to be changed or added, the buyer will usually collect it at his own risk or with the consent of the buyer,
-            you can collect it through Tech Help Info subject to advance payment.
-        </p>
+            <div style="" class="terms-content-box">
+                <h5>4. Contact Us</h5>
+                <p style="text-align: left;">
+                    Should you have any questions, please contact us immediately via email at techhelpinfobd@gmail.com
+                </p>
+            </div>
+        </div>
     </div>
 </div>
-
-@include('UI.inc.why-tech-help-info')
 @include('UI.inc.footerbar')
 @include('UI.inc.footersource')
 </body>

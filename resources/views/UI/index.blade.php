@@ -65,9 +65,9 @@
 <!--start products area-->
 <section class="products-area clearfix py-5 wow fadeInDown" data-wow-duration="1s">
     <div class="section-heading text-center">
-        <h1 style="font-size: 31px;" class="heading-title">Hikvision Bangladesh | CCTV Camera Price In Bangldesh</h1>
+        <h1 style="font-size: 31px;" class="heading-title">Hikvision Bangladesh, Hikvision CCTV Camera Price In Bangldesh</h1>
         <p class="heading-text">
-        <p>We Provide all kinds of hikvision CCTV Camera Products in bangladesh<br>
+        <p><strong>We Provide all kinds of hikvision CCTV Camera Products in bangladesh</strong><br>
             <strong>Hikvision NVR, DVR, HD CCTV CAMERA, IP CCTV CAMERA, ANALOG CAMERA, Access Control etc.</strong>
         </p>
         </p>

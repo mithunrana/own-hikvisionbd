@@ -82,8 +82,9 @@
                 <div class="col-md-6">
                     <div class="main-copy">
                         <p style="margin-bottom: 5px;">{{$SiteProfile->CopyRightText}}</p>
-                        <a href="#">Legal</a> |
-                        <a href="#">Privacy Policy</a>
+                        <a href="{{asset('')}}general-terms-of-use">General Terms Of Use</a> |
+                        <a href="{{asset('')}}privacy-policy">Privacy Policy</a> |
+                        <a href="{{asset('')}}sitemap">Sitemap</a>
                     </div>
                 </div>
                 <div class="col-md-6">

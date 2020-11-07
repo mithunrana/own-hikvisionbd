@@ -47,4 +47,16 @@ class HomeUIController extends Controller
     }
 
 
+    public function privacyPolicy(){
+        return view('UI.privacy-policy');
+    }
+
+    public function generalTermsOfUse(){
+        return view('UI.terms-condition');
+    }
+
+    public function sitemap(){
+        return view('UI.sitemap');
+    }
+
 }

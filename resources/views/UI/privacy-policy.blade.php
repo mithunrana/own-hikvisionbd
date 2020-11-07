@@ -1,4 +1,6 @@
-
+@php
+    $SiteProfile = App\SiteProfile::first();
+@endphp
 @php
     $title = "About Us";
     $keywords =  "about us, tech help info contact number, tech help info office address, tech help info mobile number, tech help info address, address, software company BD, software company bangladesh,
@@ -9,19 +11,19 @@
 @include('UI.inc.headersource')
 @include('UI.inc.menubar')
 
-<div class="container">
-    <nav style="margin-top: 10px;" aria-label="breadcrumb">
-        <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="{{asset('')}}">Home</a></li>
-            <li class="breadcrumb-item active" aria-current="page">About Us</li>
-        </ol>
-    </nav>
+<div class="container-fluid">
+        <nav style="margin-top: 10px;border-bottom: 0px;" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="{{asset('')}}">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Privacy Policy</li>
+            </ol>
+        </nav>
 </div>
 
 
 <div class="container">
     <div class="row">
-
+        <div style="padding: 20px;" class="for-design">
         <div class="">
             <h2 style="margin-top: 0px;">
                 <b style="color:#fb4343;">Our Commitment To Privacy:</b>
@@ -84,11 +86,9 @@
                 Should you have other questions or concerns about these privacy policies, please <a href="{{asset('')}}contact">contact us.</a>
             </p>
         </div>
-
+        </div>
     </div>
 </div>
-
-@include('UI.inc.why-tech-help-info')
 @include('UI.inc.footerbar')
 @include('UI.inc.footersource')
 </body>
