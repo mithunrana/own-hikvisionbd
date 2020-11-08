@@ -1,5 +1,8 @@
 @php
     $SiteProfile = App\SiteProfile::first();
+    $title = "Hikvision CCTV Camera Price In Bangladesh";
+     $keywords =  "hikvision cctv camera price in bangladesh, hikvision, bangladesh, cctv, camera, nvr, dvr, access control, price, bd, hikvision support bangladesh, hikvision support bangladesh, hikvision dvr price in bd,tech help info, career hikvision, bangladesh";
+     $description = "Hikvision cctv camera price in bangladesh contact: 01836375309. CCTV Camera, NVR, DVR, Access Control";
 @endphp
 
 
@@ -32,7 +35,7 @@
             </div>
             <div class="col-lg-9 mt-lg-0 mt-4">
                 <div class="main-product-right card">
-                    <h4 style="margin-bottom: 11px;" class="proname">Product name</h4>
+                    <h1 style="margin-bottom: 8px;font-size: 25px;" class="proname">Hikvision CCTV Camera Price In Bangladesh</h1>
 
                     @if(isset($MegaPixel))
                     <div class="row">

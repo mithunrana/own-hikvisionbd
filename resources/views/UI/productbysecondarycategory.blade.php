@@ -1,5 +1,8 @@
 @php
     $SiteProfile = App\SiteProfile::first();
+    $title = $Category->CategoryBrowserTitle;
+    $keywords =  $Category->CategorySeoKeyword;
+    $description = $Category->CategorySeoDescription;
 @endphp
 
 
@@ -18,7 +21,7 @@
             <div class="col wow fadeInDown" data-wow-duration="1s">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="{{asset('')}}">Home</a></li>
-                    <li class="breadcrumb-item active">Products</li>
+                    <li class="breadcrumb-item active">{{$Category->CategoryName}}</li>
                 </ol>
             </div>
         </div>
@@ -34,7 +37,7 @@
             </div>
             <div class="col-lg-9 mt-lg-0 mt-4">
                 <div class="main-product-right card">
-                    <h4 class="proname">Product name</h4>
+                    <h1 style="font-size: 23px;margin-bottom: 8px;" class="proname">{{$Category->SeoHeading}}</h1>
                     @if(isset($MegaPixel))
                         <div class="row">
                             @foreach($MegaPixel as $Pixel)
@@ -83,12 +86,15 @@
                             </div>
                         @endforeach
                     </div>
-                </div>
 
-                <div style="margin-top: 10px; margin-bottom: 10px;" class="">
-                    {{$Products->links()}}
-                </div>
+                    <div style="margin-top: 10px; margin-bottom: 10px;" class="">
+                        {{$Products->links()}}
+                    </div>
+                    <div style="padding: 15px;" class="CategoryDetails">
+                        {!! html_entity_decode($Category->CategoryDetails) !!}
+                    </div>
 
+                </div>
             </div>
         </div>
     </div>

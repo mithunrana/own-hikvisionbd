@@ -3,7 +3,9 @@
 @endphp
 
 @php
-    $title = "Contact Hikvision Bangladesh";
+    $title = "Contact";
+     $keywords =  "contact, hikvision, bangladesh, cctv, camera, nvr, dvr, access control, price, bd, hikvision support bangladesh, hikvision support bangladesh, hikvision dvr price in bd,tech help info, career hikvision, bangladesh";
+     $description = "For hikvision support and product price in bangladesh contact: 01836375309";
 @endphp
 
 @include('UI.inc.headersource')

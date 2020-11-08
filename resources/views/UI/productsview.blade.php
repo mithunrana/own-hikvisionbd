@@ -1,5 +1,8 @@
 @php
     $SiteProfile = App\SiteProfile::first();
+    $title = $Product->BrowserTitle;
+    $keywords =  $Product->SeoKeyword;
+    $description = $Product->SeoDescription;
 @endphp
 
 

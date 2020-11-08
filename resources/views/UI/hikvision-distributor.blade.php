@@ -3,7 +3,7 @@
 @endphp
 
 @php
-    $title = "Hikvision Distributor In Bangladesh | CCTV Camera";
+    $title = "Hikvision Distributor In Bangladesh";
     $keywords =  "Hikvision distributor In Bangladesh, hikvision, bangladesh, cctv, camera, nvr, dvr, access control, price, bd, hikvision support bangladesh, hikvision support bangladesh, hikvision dvr price in bd,tech help info";
     $description = "Hikvision Distributor In Bangladesh, tech help info is hikvision Distributor in bangladesh";
 @endphp

@@ -1,5 +1,8 @@
 @php
-$SiteProfile = App\SiteProfile::first();
+    $SiteProfile = App\SiteProfile::first();
+    $title = $CurrentPixel->MegaPixelBrowserTitle;
+    $keywords =  $CurrentPixel->MegaPixelSeoKeyword;
+    $description = $CurrentPixel->MegaPixelSeoDescription;
 @endphp
 
 
@@ -32,8 +35,7 @@ $SiteProfile = App\SiteProfile::first();
             </div>
             <div class="col-lg-9 mt-lg-0 mt-4">
                 <div class="main-product-right card">
-                    <h4 class="proname">Product name</h4>
-
+                    <h1 style="font-size: 25px;" >{{$CurrentPixel->SeoHeading}}</h1>
                     @if(isset($MegaPixel))
                         <div class="row">
                             @foreach($MegaPixel as $Pixel)
@@ -83,9 +85,13 @@ $SiteProfile = App\SiteProfile::first();
                         </div>
                         @endforeach
                     </div>
-                </div>
-                <div style="margin-top: 10px; margin-bottom: 10px;" class="">
-                    {{$Products->links()}}
+                    <div style="margin-top: 10px; margin-bottom: 10px;" class="">
+                        {{$Products->links()}}
+                    </div>
+
+                    <div style="padding: 15px;" class="brand-details">
+                        {!! html_entity_decode($CurrentPixel->MegaPixelDetails) !!}
+                    </div>
                 </div>
             </div>
         </div>

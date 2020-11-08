@@ -1,10 +1,8 @@
 
 @php
-    $title = "TECH HELP INFO | Software Company In Bangladesh";
-    $keywords =  "md mithun rana, mithun rana, software engineer mithun rana, software engineer in bangladesh, top ten software engineer in bangaldesh,
-    who is mithun rana, mithun rana address, mtihun rana contact, how to contact with mithun rana,web developer mithun rana, web designer mithun rana, web designer in bangladesh";
-    $description =  "Mithun Rana Software Engineer In Bangladesh, I am fullstack web developer i have 3year+ experience in web design and development, any body can hire me for web design and development
-    Graphics designer bangaldesh, seo service provider bangladesh";
+    $title = Auth::user()->name. "Hikvision Bangladesh";
+    $keywords =  "hikvision bangladesh";
+    $description =  "user panel";
 @endphp
 
 @include('UI.inc.headersource')

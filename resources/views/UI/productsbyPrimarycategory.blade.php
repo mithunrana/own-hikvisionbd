@@ -1,7 +1,9 @@
 @php
     $SiteProfile = App\SiteProfile::first();
+    $title = $PrimaryCategory->CategoryBrowserTitle;
+    $keywords =  $PrimaryCategory->CategorySeoKeyword;
+    $description = $PrimaryCategory->CategorySeoDescription;
 @endphp
-
 
 @include('UI.inc.headersource')
 
@@ -34,7 +36,7 @@
             </div>
             <div class="col-lg-9 mt-lg-0 mt-4">
                 <div class="main-product-right card">
-                    <h4 class="proname">Product name</h4>
+                    <h1 style="font-size: 23px;margin-bottom: 8px;" class="proname">{{$PrimaryCategory->SeoHeading}}</h1>
                     @if(isset($MegaPixel))
                         <div class="row">
                             @foreach($MegaPixel as $Pixel)
@@ -83,12 +85,13 @@
                             </div>
                         @endforeach
                     </div>
+                    <div style="margin-top: 10px; margin-bottom: 10px;" class="">
+                        {{$Products->links()}}
+                    </div>
+                    <div style="padding: 15px;" class="CategoryDetails">
+                        {!! html_entity_decode($PrimaryCategory->CategoryDetails) !!}
+                    </div>
                 </div>
-
-                <div style="margin-top: 10px; margin-bottom: 10px;" class="">
-                    {{$Products->links()}}
-                </div>
-
             </div>
         </div>
     </div>

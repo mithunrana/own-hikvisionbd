@@ -2,6 +2,11 @@
     $SiteProfile = App\SiteProfile::first();
 @endphp
 
+@php
+    $title = "Login";
+     $keywords =  "login, hikvision, bangladesh, cctv, camera, nvr, dvr, access control, price, bd, hikvision support bangladesh, hikvision support bangladesh, hikvision dvr price in bd,tech help info, career hikvision, bangladesh";
+     $description = "login into hikvision user account, CCTV Surveillance hikvision cctv camera, For hikvision product price in bangladesh contact: 01836375309";
+@endphp
 
 @include('UI.inc.headersource')
 

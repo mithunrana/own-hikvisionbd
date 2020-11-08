@@ -4,8 +4,8 @@
 
 @php
     $title = "Hikvision Bangladesh | CCTV Camera NVR DVR Access Control";
-    $keywords =  "hikvision, importer,distributor, bangladesh,cctv camera, nvr, dvr, cctv camera price";
-    $description =  "Hikvision Bangladesh Importer of hikvision cctv camera NVR, DVR, ACCESS CONTROL, total hikvision camera cctv solution service provider in bangladesh";
+    $keywords =  "hikvision, importer, distributor, bangladesh, cctv camera, nvr, dvr, cctv camera price";
+    $description =  "Hikvision Bangladesh, Importer of hikvision cctv camera NVR, DVR, ACCESS CONTROL, total hikvision camera cctv solution service provider in bangladesh";
 @endphp
 
 

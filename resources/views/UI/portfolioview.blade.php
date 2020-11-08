@@ -3,7 +3,9 @@
 @endphp
 
 @php
-    $title = "Success History Hikvision Bangladesh | Mega Trading";
+    $title = $Portfolio->BrowserTitle;
+    $keywords = $Portfolio->SeoKeyword;
+    $description = $Portfolio->SeoDescription;
 @endphp
 
 @include('UI.inc.headersource')

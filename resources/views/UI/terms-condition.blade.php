@@ -2,10 +2,9 @@
     $SiteProfile = App\SiteProfile::first();
 @endphp
 @php
-    $title = "About Us";
-    $keywords =  "about us, tech help info contact number, tech help info office address, tech help info mobile number, tech help info address, address, software company BD, software company bangladesh,
-    software company bangladesh contact number, about tech help info";
-    $description =  "About Tech Help Info, Tech Help Info Best Software Company In Bangladesh, Provide, CCTV, SOFTWARE, NEWS, JOBS";
+    $title = "General Terms Of Use | Hikvision Bangladesh";
+    $keywords =  "general, terms, of use,";
+    $description =  "General Terms Of Use Hikvisin Bangladesh Website";
 @endphp
 
 @include('UI.inc.headersource')
