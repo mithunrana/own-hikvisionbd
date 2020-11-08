@@ -1,13 +1,9 @@
 @php
     $SiteProfile = App\SiteProfile::first();
+    $title = $HighLights->BrowserTitle;
+    $keywords = $HighLights->SeoKeyword;
+    $description = $HighLights->SeoDescription;
 @endphp
-
-@php
-    $title = "Avtech Support In Bangladesh | Soshine Marketing Company";
-    $keywords = "avtech, support, bangladesh, avtech, distrubutor, importer";
-    $description = "Avtech Support In Bangladesh, Contact with Soshine Marketing Company";
-@endphp
-
 @include('UI.inc.headersource')
 
 <!--start header-->
@@ -62,7 +58,7 @@
             <div class="col-12 col-sm-12 col-md-7 col-lg-8 col-xl-8">
                 <h3 style="background-color: #d71920;color: white;margin-bottom: 0;border-radius: 4px;padding: 3px;width: 100%;">Video Tutorial</h3>
                 <div style="margin-top: 10px;margin-bottom: 10px;" class="embedded-tutorial-view">
-                    <iframe width="100%" height="450" src="https://www.youtube.com/embed/zLX-Af2CRi4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                   {!! html_entity_decode($HighLights->EmbeddedVideo) !!}
                 </div>
                 <div class="info-box">
                     <h1 STYLE="font-size:30px;">{{$HighLights->BlogName}}</h1>

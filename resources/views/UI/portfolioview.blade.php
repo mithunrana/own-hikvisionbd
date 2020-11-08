@@ -1,8 +1,5 @@
 @php
     $SiteProfile = App\SiteProfile::first();
-@endphp
-
-@php
     $title = $Portfolio->BrowserTitle;
     $keywords = $Portfolio->SeoKeyword;
     $description = $Portfolio->SeoDescription;

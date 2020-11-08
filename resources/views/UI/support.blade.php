@@ -3,7 +3,9 @@
 @endphp
 
 @php
-    $title = "Mega Trading International LTD | hikvision bangladesh";
+    $title = "Hikvision Support In Bangladesh | Service Center";
+     $keywords =  "hikvision support in bangladesh, hikvision service center, hikvision help line, hikvision call center";
+     $description = "We provide hikvision all kinds of support in bangladesh but it's fully paid, also we supply hikvision product in full bangladesh online and offline";
 @endphp
 
 @include('UI.inc.headersource')

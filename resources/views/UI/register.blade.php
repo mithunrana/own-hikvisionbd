@@ -1,8 +1,8 @@
 
 @php
-    $title = "Register | Tech Help Info";
-    $keywords =  "tech help info,registration,signup, software development company, custom software development company";
-    $description =  "Tech Help Info User Registration, Tech Help Info Software Development Company In Bangladesh";
+    $title = "Register";
+    $keywords =  "hikvision, bangladesh, register, signup";
+    $description =  "Hikvision Bangladesh Website Registration Here";
 @endphp
 
 @include('UI.inc.headersource')

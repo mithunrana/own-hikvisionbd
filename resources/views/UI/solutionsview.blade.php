@@ -1,13 +1,12 @@
 @php
     $SiteProfile = App\SiteProfile::first();
+    $title = $Solution->BrowserTitle;
+    $keywords =  $Solution->SeoKeyword;
+    $description = $Solution->SeoDescription;
 @endphp
 
-@php
-    $title = "Success History Hikvision Bangladesh | Mega Trading";
-@endphp
 
 @include('UI.inc.headersource')
-
 <!--start header-->
 @include('UI.inc.menubar')
 <!--End Header-->
@@ -84,12 +83,10 @@
 
 @include('UI.inc.footerbar')
 
-
 <!--Social icon-->
 @include('UI.inc.sidebarsocialnumber')
 <!--Social icon-->
 
 @include('UI.inc.footersource')
-
 </body>
 </html>

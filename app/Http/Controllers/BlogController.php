@@ -31,7 +31,7 @@ class BlogController extends Controller
         $SiteProfile = SiteProfile::first();
         $HighLights =  BlogTutorial::where('Permalink',$url)->first();
         $Tutorials = BlogTutorial::where('ActiveStatus',1)->orderBy('id', 'DESC')->paginate(9);
-        return view('UI.support-view',compact('Categories','HighLights','Tutorials','RecentFive','SiteProfile'));
+        return view('UI.support-view',compact('Categories','HighLights','Tutorials','SiteProfile'));
     }
 
     public function blogByCategory($url){

@@ -1,5 +1,8 @@
 @php
     $SiteProfile = App\SiteProfile::first();
+    $title = "Solution | Hikvision Video Security System IoT Solutions";
+    $keywords = "Solution | Hikvision Video Security System IoT Solutions";
+    $description = "Solution | Hikvision Video Security System IoT Solutions";
 @endphp
 
 

@@ -6,7 +6,7 @@
 @php
     $title = "Success History Hikvision Bangladesh | Tech Help Info";
      $keywords =  "success history, hikvision, bangladesh, cctv, camera, nvr, dvr, access control, price, bd, hikvision support bangladesh, hikvision support bangladesh, hikvision dvr price in bd,tech help info";
-     $description = "tech help info is the it solution company in bangladesh, provide all kinds of it solutions in bangladesh";
+     $description = "tech help info is the it solution company in bangladesh, provide all kinds of it solutions in by hikvision cctv camera in bangladesh";
 @endphp
 
 @include('UI.inc.headersource')
