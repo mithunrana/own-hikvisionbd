@@ -84,7 +84,22 @@
                         @endforeach
                     </div>
                         <h1 style="margin-bottom: 8px;font-size: 25px;" class="proname">Hikvision CCTV Camera Price In Bangladesh</h1>
-                        <p>Hikvision CCTV Camera Price In Bangladesh, </p>
+                        <p>we provive hikvision cctv camera best price in bangladesh. from Hikvision CCTV Camera to NVR DVR Access Control & Total Solution We provide in bangladesh.
+                            Provide door to door sell, supply & installment service in bangladesh. Here have multiple category hikvision products easily any
+                            one can find hikvision CCTV Camera from here
+                            available hikvision CCTV Camera Products Hikvision
+                            <a href="{{asset('')}}products/hikvision-hd-cctv-camera-price-bangladesh">HD CCTV Camera price</a>,
+                            <a href="{{asset('')}}products/hikvision-ip-camera-price-bangladesh">IP CCTV Camera Price</a>,
+                            HD Dome Camera,
+                            HD Bullet Camera,
+                            <a href="{{asset('')}}products/hikvision-ip-camera-price-bangladesh">IP Dome Camera & Bullet Camera</a>,
+                            PTZ Camera, NVR, DVR,
+                            <a href="{{asset('')}}products/hikvision-access-control-price-bangladesh">Access Control</a>
+                            <a href="{{asset('')}}products/hikvision-monitor-price-bangladesh">Monitor</a>
+                            <a href="{{asset('')}}products/hikvision-switch-price-bangladesh">Switch</a>
+                            and other accessories price available here. lowest budget CCTV Camera Full Professional Height Budget Camera Available Here.
+                            Hikvision Officail 1 Year Warranty Available with this product Hikvision CCTV Camera.
+                        </p>
                 </div>
 
                 <div style="margin-top: 10px; margin-bottom: 10px;" class="">

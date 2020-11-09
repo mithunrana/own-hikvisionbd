@@ -64,11 +64,14 @@
 
 <!--start products area-->
 <section class="products-area clearfix py-5 wow fadeInDown" data-wow-duration="1s">
-    <div class="section-heading text-center">
+    <div class="section-heading text-center container">
         <h1 style="font-size: 31px;" class="heading-title">Hikvision Bangladesh, Hikvision CCTV Camera Price In Bangldesh</h1>
         <p class="heading-text">
         <p><strong>We Provide all kinds of hikvision CCTV Camera Products in bangladesh</strong><br>
             <strong>Hikvision NVR, DVR, HD CCTV CAMERA, IP CCTV CAMERA, ANALOG CAMERA, Access Control etc.</strong>
+            Hikvision is the most popular brand for CCTV Camera Solutions In Bangladesh,
+            Also Hikvision is the leading CCTV Camera Brand in the world wide. Hikvision Discover Lot Of product for Security Surveillance -
+            IP Camera System, HD Camera, NVR, DVR, Switch, Thermal Camera, PTZ Camera. For Price visit this site
         </p>
         </p>
     </div>

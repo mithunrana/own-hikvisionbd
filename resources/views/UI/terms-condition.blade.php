@@ -69,6 +69,13 @@
                     Should you have any questions, please contact us immediately via email at techhelpinfobd@gmail.com
                 </p>
             </div>
+
+            <div style="" class="terms-content-box">
+                <p style="background: yellow;display: inline-block;padding: 0 10px; margin-left:15px;">
+                    <b>Disclaimer : </b>We here by declare that www.hikvisionbd.com is not
+                    official website of Hikvision. For official Website Please Visit - www.hikvision.com  We Secure Bangladesh is Hikvision Channel Partner.</p>
+            </div>
+
         </div>
     </div>
 </div>
