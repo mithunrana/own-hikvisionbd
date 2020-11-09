@@ -2,9 +2,9 @@
 
 
 Route::get('/','HomeUIController@index');
-Route::get('/products','ProductsController@productsmain');
+Route::get('/hikvision-cctv-camera-price-bangladesh','ProductsController@productsmain');
 Route::get('/products/{url}','ProductsController@cctvPrimaryCategory');
-Route::get('/camera/{url}','ProductsController@byMegaPixel');
+Route::get('/mega-pixel/{url}','ProductsController@byMegaPixel');
 Route::get('/brand/{url}','ProductsController@byBrand');
 
 Route::get('/category/{url}','ProductsController@cctvSecondaryCategory');

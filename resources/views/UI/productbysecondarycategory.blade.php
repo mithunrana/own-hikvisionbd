@@ -41,7 +41,7 @@
                     @if(isset($MegaPixel))
                         <div class="row">
                             @foreach($MegaPixel as $Pixel)
-                                <a href="{{asset('')}}camera/{{$Pixel->MegaPixelUrl}}" style="text-decoration: none;color: #d71920;margin-top: 6px;margin-bottom: 6px;margin-left: 8px;">
+                                <a href="{{asset('')}}mega-pixel/{{$Pixel->MegaPixelUrl}}" style="text-decoration: none;color: #d71920;margin-top: 6px;margin-bottom: 6px;margin-left: 8px;">
                                     <p style="border: 1px solid grey;padding: 8px;margin-bottom:0px;margin-right: 15px;">{{$Pixel->MegaPixel}}</p>
                                 </a>
                             @endforeach
@@ -65,12 +65,11 @@
                                         </p>
                                     </div>
                                     <div class="p-compare">
-                                        <div class="form-check">
-                                            <label class="fomr-chck-label" for="check">
-                                                <input id="check" id="p-check" class="form-check-input" type="checkbox">
-                                                Add to Compare
-                                            </label>
-                                        </div>
+                                        @if($SingleProduct->PriceStatus == '1')
+                                            <ins style="font-size: 16px;background: #fff;color: #d71920;font-weight: 600;margin-right: 10px;text-decoration: none;">{{$SingleProduct->CurrentPrice}}৳</ins>
+                                        @else
+                                            <ins style="font-size: 16px;background: #fff;color: #d71920;font-weight: 600;margin-right: 10px;text-decoration: none;">Call For Price</ins>
+                                        @endif
                                     </div>
                                     <div class="plus-arrow">
                                         <a href="#THI{{$SingleProduct->id}}" data-toggle="modal">

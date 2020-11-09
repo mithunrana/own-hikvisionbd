@@ -1,8 +1,8 @@
 @php
-    $SiteProfile = App\SiteProfile::first();
-    $title = "Hikvision CCTV Camera Price In Bangladesh";
-     $keywords =  "hikvision cctv camera price in bangladesh, hikvision, bangladesh, cctv, camera, nvr, dvr, access control, price, bd, hikvision support bangladesh, hikvision support bangladesh, hikvision dvr price in bd,tech help info, career hikvision, bangladesh";
-     $description = "Hikvision cctv camera price in bangladesh contact: 01836375309. CCTV Camera, NVR, DVR, Access Control";
+$SiteProfile = App\SiteProfile::first();
+$title = "Hikvision CCTV Camera Price In Bangladesh";
+$keywords =  "hikvision cctv camera price in bangladesh, hikvision, bangladesh, cctv, camera, nvr, dvr, access control, price, bd, hikvision support bangladesh, hikvision support bangladesh, hikvision dvr price in bd,tech help info, career hikvision, bangladesh";
+$description = "Hikvision cctv camera price in bangladesh contact: 01836375309. CCTV Camera, NVR, DVR, Access Control";
 @endphp
 
 
@@ -35,12 +35,14 @@
             </div>
             <div class="col-lg-9 mt-lg-0 mt-4">
                 <div class="main-product-right card">
+                    <h1 style="margin-bottom: 8px;font-size: 25px;" class="proname">Hikvision CCTV Camera Price In Bangladesh</h1>
+
                     @if(isset($MegaPixel))
                     <div class="row">
                         @foreach($MegaPixel as $Pixel)
-                            <a href="{{asset('')}}mega-pixel/{{$Pixel->MegaPixelUrl}}" style="text-decoration: none;color: #d71920;margin-top: 6px;margin-bottom: 6px;margin-left: 8px;">
-                                <p style="border: 1px solid grey;padding: 8px;margin-bottom:0px;margin-right: 15px;">{{$Pixel->MegaPixel}}</p>
-                            </a>
+                        <a href="{{asset('')}}camera/{{$Pixel->MegaPixelUrl}}" style="text-decoration: none;color: #d71920;margin-top: 6px;margin-bottom: 6px;margin-left: 8px;">
+                            <p style="border: 1px solid grey;padding: 8px;margin-bottom:0px;margin-right: 15px;">{{$Pixel->MegaPixel}}</p>
+                        </a>
                         @endforeach
                     </div>
                     @endif
@@ -63,11 +65,12 @@
                                     </p>
                                 </div>
                                 <div class="p-compare">
-                                    @if($SingleProduct->PriceStatus == '1')
-                                        <ins style="font-size: 16px;background: #fff;color: #d71920;font-weight: 600;margin-right: 10px;text-decoration: none;">{{$SingleProduct->CurrentPrice}}৳</ins>
-                                    @else
-                                        <ins style="font-size: 16px;background: #fff;color: #d71920;font-weight: 600;margin-right: 10px;text-decoration: none;">Call For Price</ins>
-                                    @endif
+                                    <div class="form-check">
+                                        <label class="fomr-chck-label" for="check">
+                                            <input id="check" id="p-check" class="form-check-input" type="checkbox">
+                                            Add to Compare
+                                        </label>
+                                    </div>
                                 </div>
                                 <div class="plus-arrow">
                                     <a href="#THI{{$SingleProduct->id}}" data-toggle="modal">
@@ -83,8 +86,6 @@
                         </div>
                         @endforeach
                     </div>
-                        <h1 style="margin-bottom: 8px;font-size: 25px;" class="proname">Hikvision CCTV Camera Price In Bangladesh</h1>
-                        <p>Hikvision CCTV Camera Price In Bangladesh, </p>
                 </div>
 
                 <div style="margin-top: 10px; margin-bottom: 10px;" class="">

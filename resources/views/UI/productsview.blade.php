@@ -62,11 +62,16 @@
                                     </div>
                                 @endif
                                 @if($Product->PriceStatus == 1)
-                                <div class="price-wrap">
-                                    <ins style="font-size: 24px;color: #d71920;font-weight: 600;margin-right: 10px;text-decoration: none;">{{$Product->CurrentPrice}}</ins>
-                                    Regular Price: <del style="color:red;">{{$Product->RegularPrice}}</del>
-                                    <div style="    font-size: 11px;color: #079eec;text-transform: uppercase;font-weight: 600;" class="special-label">Cash Discount Price</div>
-                                </div>
+                                    <div class="price-wrap">
+                                        <ins style="font-size: 24px;color: #d71920;font-weight: 600;margin-right: 10px;text-decoration: none;">{{$Product->CurrentPrice}}</ins>
+                                        Regular Price: <del style="color:red;">{{$Product->RegularPrice}}</del>
+                                        <div style="    font-size: 11px;color: #079eec;text-transform: uppercase;font-weight: 600;" class="special-label">Cash Discount Price</div>
+                                        <div style="font-size: 20px;color: #079eec;text-transform: uppercase;font-weight: 600;" class="special-label">Call For Best Price & Project Price</div>
+                                    </div>
+                                @else
+                                    <div style="border-top: 1px solid grey;" class="price-wrap">
+                                        <ins style="font-size: 24px;color: #d71920;font-weight: 600;margin-right: 10px;text-decoration: none;">Call For Price</ins>
+                                    </div>
                                 @endif
                                 @if($Product->Datasheet !== '#')
                                     <a class="btn btn-danger" href="{{asset('')}}{{$Product->Datasheet}}">Download Datasheet</a>

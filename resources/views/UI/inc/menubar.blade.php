@@ -36,7 +36,7 @@
             <div class="main-nav ml-auto">
                 <ul class="nav-ul">
                     <li><a href="{{asset('')}}">Home</a></li>
-                    <li style="position: relative" class="mega-dd-btn"><a href="{{asset('')}}products">Products <i style="color: #6d6e71;" class="fa fa-angle-down"></i></a>
+                    <li style="position: relative" class="mega-dd-btn"><a href="{{asset('')}}hikvision-cctv-camera-price-bangladesh">Products <i style="color: #6d6e71;" class="fa fa-angle-down"></i></a>
                         <div class="mega-content">
                             <div class="row">
                                 <div class="col">
