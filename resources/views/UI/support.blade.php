@@ -37,6 +37,22 @@
 </section>
 <!--end mega trading header area-->
 
+<div class="container">
+    <h1 style="text-align: center;padding: 4px;font-size: 26px;color: grey;">Hikvision Support In Bangladesh</h1>
+    <p style="text-align:center;">
+        hikvision support in bangladesh, we provide hikvision support and service in bangladesh but it must be paid.
+        in hikvision CCTV Camera, NVR, DVR, Access Control and others hikvision product hardware and software problem
+        solution service support we provide if it is possible.<br>
+        <b>Our Service Method:</b> We Collect Collect Your device or product from you house or customer delivery his/her product in our office,
+        after find out the problem we said how many time need for service. after complete the servicing we notify to customer and then deliver the product.
+        for hikvision product support and service contact with us.<br>
+        also we provide hikvision CCTV Camera installment configure service in bangladesh.
+        here availble hikvision product common problem how to forget hikvision DVR, NVR Password,
+        hikvision dvr default password, hikvision dvr default password reset, reset dvr password without SADP Tool video tutorial
+    </p>
+</div>
+
+
 
 <!--start mega trading area-->
 <section class="mega-trading clearfix pb-3 wow fadeInDown" data-wow-duration="1s">

@@ -230,45 +230,25 @@
     <!--start solution area-->
     <section class="solution-area clearfix wow fadeInDown" data-wow-duration="1s">
         <div class="container">
-            <div class="row">
-                <div class="col">
-                    <div class="ml-1 mb-4">
-                        <h4 style="color: #555;">Our Solutions
-                            <div class="next-prev float-right mr-2">
-                                <i class="fa fa-angle-left prv-slsn ps-control slsn-control"></i>
-                                <i class="fa fa-angle-right nxt-slsn ps-control slsn-control"></i>
-                            </div>
-                        </h4>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <div class="products-box">
-                        <div class="solution-slider products-slider-custom">
-                            <!--product-item-->
-                            @foreach(App\Solutions::orderBy('id','DESC')->where('ActiveStatus','1')->skip(0)->take(8)->get() as $Solution)
-                                <div class="products-item">
-                                    <!--solution item-->
-                                    <div class="solution-item">
-                                        <div class="media">
-                                            <a href="{{asset('')}}solutions/{{$Solution->Permalink}}">
-                                                <img style="width:40px" class="mr-3 img-fluid" src="{{asset('')}}{{$Solution->featuredimage2->imageurl}}" alt="{{$Solution->ImageAltText}}">
-                                            </a>
-                                            <div class="media-body">
-                                                <h5 style="color: #505050; font-weight: 600" class="mt-0">
-                                                    <a style="color:#d30411" href="{{asset('')}}solutions/{{$Solution->Permalink}}">{{$Solution->SolutionsName}}</a>
-                                                </h5>
-                                                <p style="color: #787878;font-size: 14px;text-transform: capitalize;margin-bottom: 5px">{{$Solution->SolutionsName}}</p>
-                                                <a style="color: #d71920;" href="{{asset('')}}solutions/{{$Solution->Permalink}}">More</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            @endforeach
-                        </div>
-                    </div>
-                </div>
+            <div class="row d-flex justify-content-center">
+                @foreach(App\Solutions::orderBy('id','DESC')->where('ActiveStatus','1')->skip(0)->take(8)->get() as $Solution)
+                     <div style="margin-top:10px;" class="products-item col-lg-3 col-md-4 col-sm-4 col-12">
+                          <div class="solution-item">
+                              <div class="media">
+                                   <a href="{{asset('')}}solutions/{{$Solution->Permalink}}">
+                                       <img style="width:40px" class="mr-3 img-fluid" src="{{asset('')}}{{$Solution->featuredimage2->imageurl}}" alt="{{$Solution->ImageAltText}}">
+                                   </a>
+                                   <div class="media-body">
+                                   <h5 style="color: #505050; font-weight: 600" class="mt-0">
+                                      <a style="color:#d30411" href="{{asset('')}}solutions/{{$Solution->Permalink}}">{{$Solution->SolutionsName}}</a>
+                                      </h5>
+                                      <p style="color: #787878;font-size: 14px;text-transform: capitalize;margin-bottom: 5px">{{$Solution->SolutionsName}}</p>
+                                      <a style="color: #d71920;" href="{{asset('')}}solutions/{{$Solution->Permalink}}">More</a>
+                                   </div>
+                              </div>
+                          </div>
+                     </div>
+                 @endforeach
             </div>
         </div>
     </section>
@@ -347,8 +327,6 @@
 @endif
 
 
-
-<!--start news events area-->
 
 
 

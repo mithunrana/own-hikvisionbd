@@ -55,13 +55,15 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-12 col-sm-12 col-md-7 col-lg-8 col-xl-8">
+            <div style="background-color: white;padding: 4px;" class="col-12 col-sm-12 col-md-7 col-lg-8 col-xl-8">
                 <h3 style="background-color: #d71920;color: white;margin-bottom: 0;border-radius: 4px;padding: 3px;width: 100%;">Video Tutorial</h3>
                 <div style="margin-top: 10px;margin-bottom: 10px;" class="embedded-tutorial-view">
                    {!! html_entity_decode($HighLights->EmbeddedVideo) !!}
                 </div>
                 <div class="info-box">
-                    <h1 STYLE="font-size:30px;">{{$HighLights->BlogName}}</h1>
+                    <div style="border-bottom: 1px solid red;" class="title-box">
+                        <h1 style="font-size:25px;font-weight: 800;text-transform: uppercase;margin-bottom: 0px;letter-spacing: 3px;">{{$HighLights->BlogName}}</h1>
+                    </div>
                     {!!html_entity_decode($HighLights->BlogDetails)!!}
                 </div>
             </div>
