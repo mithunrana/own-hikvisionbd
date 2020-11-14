@@ -29,6 +29,8 @@ class CreateUsersTable extends Migration
             $table->text('address')->nullable();
             $table->string('VerifyCode')->nullable();
             $table->text('image')->nullable();
+            $table->string('country')->nullable();
+            $table->string('country')->nullable();
             $table->string('activestatus')->default('EndUserNotActive');
             $table->rememberToken();
             $table->timestamps();

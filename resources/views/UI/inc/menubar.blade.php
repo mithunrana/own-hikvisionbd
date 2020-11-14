@@ -8,8 +8,8 @@
                         <ul class="ht-ul">
                             <li><a href="javascript:;">Cell: {{$SiteProfile->CorporatePhone}}</a></li>
                             @if(!Auth::check())
-                                <li><a style="color: #fff;display: inline-block;" href="{{asset('')}}register">Signup</a></li>
-                                <li><a style="color: #fff;display: inline-block;" href="{{asset('')}}login">Login</a></li>
+                                <li><a style="color: #fff;display: inline-block;" href="{{asset('')}}hikvision-support-bangladesh">support</a></li>
+                                <li><a style="color: #fff;display: inline-block;" href="{{asset('')}}contact">contact</a></li>
                             @endif
                             @if(Auth::check())
                                 <li>

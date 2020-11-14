@@ -35,7 +35,7 @@ class ContactController extends Controller
         $website = $request->website;
         $companyname = $request->companyname;
         $zip_code = $request->zip_code;
-        $incomeMailAddress = "mithunrana139@gmail.com";
+        $incomeMailAddress = "techhelpinfobd@gmail.com";
 
         Mail::to($email)->send(new ContactUserOutGoingMail($name));
         Mail::to($incomeMailAddress)->send(new ContactUserIncomingMail($email,$country,$address,$phone_no,$usermessage,$enquiry_type,$name,$website,$companyname,$zip_code));

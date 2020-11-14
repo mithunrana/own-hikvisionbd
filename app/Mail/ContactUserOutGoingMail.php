@@ -29,7 +29,7 @@ class ContactUserOutGoingMail extends Mailable
      */
     public function build()
     {
-        $subject = "TECH HELP INFO CONTACT";
+        $subject = "TECH HELP INFO | Hikvision Channel Partner ";
         $name = $this->name;
         return $this->view('Mail.contact-user-mail-send',compact('name'))->subject($subject);
     }
