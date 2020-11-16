@@ -57,7 +57,7 @@ class ProductsController extends Controller
         $MegaPixel = CctvCameraMegaPixel::get();
         $Brands = ProductsBrand::all();
         $Categories = ProductsPrimaryCategory::all();
-        return view('UI.productsbybrand',compact('Categories','Brands','Products','MegaPixel','Products','Brand','SiteProfile'));
+        return view('UI.productsbybrand',compact('Categories','Brands','Products','MegaPixel','Products','Brand'));
     }
 
     public function byMegaPixel($url){
@@ -66,7 +66,7 @@ class ProductsController extends Controller
         $MegaPixel = CctvCameraMegaPixel::get();
         $Brands = ProductsBrand::all();
         $Categories = ProductsPrimaryCategory::all();
-        return view('UI.productsbymegapixel',compact('Categories','Brands','Products','MegaPixel','Products','CurrentPixel','SiteProfile'));
+        return view('UI.productsbymegapixel',compact('Categories','Brands','Products','MegaPixel','Products','CurrentPixel'));
     }
 
     public function bySearch(Request $request){
