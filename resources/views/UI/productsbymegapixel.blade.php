@@ -91,6 +91,22 @@
                     <div style="padding: 15px;" class="brand-details">
                         {!! html_entity_decode($CurrentPixel->MegaPixelDetails) !!}
                     </div>
+
+                    <div style="border-top:1px solid grey;margin-top: 5px;" class="available-model">
+                        <p>Available {{$CurrentPixel->MegaPixel}} Camera Easily Check From Here</p>
+                        <div class="row">
+                            @foreach($Products as $SingleProduct)
+                                <div class="col-sm-4">
+                                    <h6 style="margin-bottom: 0px;" class="product-name">
+                                        <a style="margin-bottom: 0px;color: #d71920;font-weight: 700;font-size: 16px;" href="{{asset('')}}{{$SingleProduct->Permalink}}">{{$SingleProduct->Model}}</a>
+                                    </h6>
+                                    <p>
+                                        <a style="margin-bottom: 0px;color: #6d6e71;font-weight: 700;font-size: 13px;" href="{{asset('')}}{{$SingleProduct->Permalink}}">{{$SingleProduct->Name}}</a>
+                                    </p>
+                                </div>
+                            @endforeach
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

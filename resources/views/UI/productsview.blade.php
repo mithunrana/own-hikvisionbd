@@ -96,6 +96,50 @@
                     {!! html_entity_decode($Product->OptionalContent) !!}
                 </div>
                 @endif
+
+
+                <p style="color:red;font-size: 21px;">More Related Product</p>
+                <div class="row">
+                    @php
+                        $RelatedProduct = App\Products::orderBy('id','DESC')->where('Category',$Product->Category)->skip(0)->take(4)->get();
+                    @endphp
+                    @foreach($RelatedProduct as $SingleProduct)
+                        <div class="col-md-4 padding-pro">
+                            <div class="product-box no-margin">
+                                <div class="product-info">
+                                    <div class="product-info-img">
+                                        <a href="{{asset('')}}{{$SingleProduct->Permalink}}">
+                                            <img src="{{asset('')}}{{$SingleProduct->image->imageurl}}" alt="{{$SingleProduct->ImageAltText}}">
+                                        </a>
+                                    </div>
+                                    <h6 class="product-name">
+                                        <a style="margin-bottom: 0px;color: #d71920;font-weight: 700;font-size: 16px;" href="{{asset('')}}{{$SingleProduct->Permalink}}">{{$SingleProduct->Model}}</a>
+                                    </h6>
+                                    <p>
+                                        <a style="margin-bottom: 0px;" href="{{asset('')}}{{$SingleProduct->Permalink}}">{{$SingleProduct->Name}}</a>
+                                    </p>
+                                </div>
+                                <div class="p-compare">
+                                    @if($SingleProduct->PriceStatus == '1')
+                                        <ins style="font-size: 16px;background: #fff;color: #d71920;font-weight: 600;margin-right: 10px;text-decoration: none;">{{$SingleProduct->CurrentPrice}}৳</ins>
+                                    @else
+                                        <ins style="font-size: 16px;background: #fff;color: #d71920;font-weight: 600;margin-right: 10px;text-decoration: none;">Call For Price</ins>
+                                    @endif
+                                </div>
+                                <div class="plus-arrow">
+                                    <a href="#THI{{$SingleProduct->id}}" data-toggle="modal">
+                                        <img src="{{asset('')}}UI/img/plus.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="back-arrow">
+                                    <a href="#">
+                                        <img src="{{asset('')}}UI/img/arrow-black.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    @endforeach
+                </div>
             </div>
         </div>
     </div>
