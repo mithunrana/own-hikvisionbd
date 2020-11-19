@@ -40,6 +40,7 @@
 <div class="container">
     <h1 style="text-align: center;padding: 4px;font-size: 26px;color: grey;">Hikvision Support In Bangladesh</h1>
     <p style="text-align:center;">
+        <b style="background-color: yellow;">Our Support Is Fully Paid if You Want Free Service Don't Call Us</b></br>
         hikvision support in bangladesh, we provide hikvision support and service in bangladesh but it must be paid.
         in hikvision CCTV Camera, NVR, DVR, Access Control and others hikvision product hardware and software problem
         solution service support we provide if it is possible.<br>
