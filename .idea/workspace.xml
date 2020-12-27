@@ -3,14 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="f101b50b-501f-4382-a85f-fe4b512560b6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ContactController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ContactController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Mail/ContactUserOutGoingMail.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Mail/ContactUserOutGoingMail.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/mail.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/mail.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Admin/inc/header source.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Admin/inc/header source.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/UI/inc/menubar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/UI/inc/menubar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/UI/productbysecondarycategory.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/UI/productbysecondarycategory.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/UI/productsbyPrimarycategory.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/UI/productsbyPrimarycategory.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,7 +21,7 @@
     </execution>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf />
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -63,10 +59,8 @@
         <option value="$PROJECT_DIR$/resources/views/UI/privacy-policy.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/UI/hikvision-cctv-camera-price-bangladesh.php" />
         <option value="$PROJECT_DIR$/resources/views/UI/productsview.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/UI/productbysecondarycategory.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/UI/productsbybrand.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/UI/productsbymegapixel.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/UI/productsbyPrimarycategory.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/UI/productsbysearch.blade.php" />
         <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/resources/views/UI/productsmain.blade.php" />
@@ -80,6 +74,8 @@
         <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/config/mail.php" />
         <option value="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" />
+        <option value="$PROJECT_DIR$/resources/views/UI/productbysecondarycategory.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/UI/productsbyPrimarycategory.blade.php" />
       </list>
     </option>
   </component>
@@ -174,7 +170,7 @@
       <path value="$PROJECT_DIR$/vendor/league/mime-type-detection" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="10" />
     <option name="y" value="20" />
     <option name="width" value="1346" />
@@ -185,7 +181,35 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="own-hikvisionbd" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="C:\xampp\htdocs\own-hikvisionbd" type="442cc68d:ScopeViewTreeModel$RootNode" />
+            </path>
+            <path>
+              <item name="own-hikvisionbd" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="C:\xampp\htdocs\own-hikvisionbd" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="resources" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="own-hikvisionbd" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="C:\xampp\htdocs\own-hikvisionbd" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="resources" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="views" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="own-hikvisionbd" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="C:\xampp\htdocs\own-hikvisionbd" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="resources" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="views" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="UI" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="ProjectPane" />
     </panes>
   </component>
@@ -265,16 +289,19 @@
       <workItem from="1605214936076" duration="1651000" />
       <workItem from="1605250519030" duration="1091000" />
       <workItem from="1605256769084" duration="439000" />
+      <workItem from="1605814943767" duration="245000" />
+      <workItem from="1607967036981" duration="101000" />
+      <workItem from="1607971875211" duration="595000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35246000" />
+    <option name="totallyTimeSpent" value="36187000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21641791" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2228145" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -466,13 +493,6 @@
     <entry file="file://$PROJECT_DIR$/routes/console.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/UI/productbysecondarycategory.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="43" column="64" selection-start-line="43" selection-start-column="64" selection-end-line="43" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/UI/productsbybrand.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
@@ -484,13 +504,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="39" column="64" selection-start-line="39" selection-start-column="64" selection-end-line="39" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/UI/productsbyPrimarycategory.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="42" column="64" selection-start-line="42" selection-start-column="64" selection-end-line="42" selection-end-column="64" />
         </state>
       </provider>
     </entry>
@@ -603,6 +616,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="493">
           <caret line="31" column="50" selection-start-line="31" selection-start-column="50" selection-end-line="31" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/UI/productsbyPrimarycategory.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="67" selection-start-line="22" selection-start-column="67" selection-end-line="22" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/UI/productbysecondarycategory.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="67" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="67" />
         </state>
       </provider>
     </entry>

@@ -20,6 +20,9 @@
             <div class="col wow fadeInDown" data-wow-duration="1s">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="{{asset('')}}">Home</a></li>
+                    <li style="color:red;" class="breadcrumb-item">
+                        <a style="color:red;" href="{{asset('')}}hikvision-cctv-camera-price-bangladesh">Products</a>
+                    </li>
                     <li class="breadcrumb-item active">{{$PrimaryCategory->CategoryName}}</li>
                 </ol>
             </div>
